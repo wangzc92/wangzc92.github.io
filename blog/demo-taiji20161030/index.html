@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT, web" />
+  <meta name="keywords" content="前端实例, css" />
 
 
 
@@ -86,16 +86,43 @@
 
 
 
-<meta name="description" content="欢迎来到我的博客！先简单自我介绍一下，我叫王振超，2016年毕业于华中农业大学。虽是生物信息学专业，毕业后抛弃生物，从事前端开发工作。一入前端深似海，在这个岗位上只有不断学习，接触新技术，才能不被淘汰。工作学习中，查阅相关资料的时候发现很多程序员有写博客记录的习惯，而我最多在有道云笔记上写几个关键词，都没有完整的整理记录。偶然在网上看到Hexo相关资料，突然脑子一热，利用周末一天搭建了属于自己的博">
+<meta name="description" content="大道，在太极之上而不为高；在六极之下而不为深；先天地而不为久；长于上古而不为老。人生就是一种修行，应顺应大道至德和自然规律，不为外物所拘，“无为而无不为”。周末闲来无事，用css绘制一个太极图，在转动的阴阳图上领略生命的奥秘。在此之前你要掌握的一些基础是：
+
+
+border圆角的实现及特点
+:before和:after的使用
+css简单动画
+
+
+绘图分析要绘制一个太极图，首先要先仔细观察分析，有图">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客前言">
-<meta property="og:url" content="http://wangzc.cc/blog/hello-world20161021/index.html">
+<meta property="og:title" content="趣玩实例——纯css实现旋转的太极图">
+<meta property="og:url" content="http://wangzc.cc/blog/demo-taiji20161030/index.html">
 <meta property="og:site_name" content="竹风欣海笑">
-<meta property="og:description" content="欢迎来到我的博客！先简单自我介绍一下，我叫王振超，2016年毕业于华中农业大学。虽是生物信息学专业，毕业后抛弃生物，从事前端开发工作。一入前端深似海，在这个岗位上只有不断学习，接触新技术，才能不被淘汰。工作学习中，查阅相关资料的时候发现很多程序员有写博客记录的习惯，而我最多在有道云笔记上写几个关键词，都没有完整的整理记录。偶然在网上看到Hexo相关资料，突然脑子一热，利用周末一天搭建了属于自己的博">
-<meta property="og:updated_time" content="2016-10-30T13:22:04.640Z">
+<meta property="og:description" content="大道，在太极之上而不为高；在六极之下而不为深；先天地而不为久；长于上古而不为老。人生就是一种修行，应顺应大道至德和自然规律，不为外物所拘，“无为而无不为”。周末闲来无事，用css绘制一个太极图，在转动的阴阳图上领略生命的奥秘。在此之前你要掌握的一些基础是：
+
+
+border圆角的实现及特点
+:before和:after的使用
+css简单动画
+
+
+绘图分析要绘制一个太极图，首先要先仔细观察分析，有图">
+<meta property="og:image" content="http://ofi3qxlvd.bkt.clouddn.com/images/demo/taiji.gif">
+<meta property="og:image" content="http://ofi3qxlvd.bkt.clouddn.com/images/demo/taiji_part.jpg">
+<meta property="og:updated_time" content="2016-10-30T15:25:53.642Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客前言">
-<meta name="twitter:description" content="欢迎来到我的博客！先简单自我介绍一下，我叫王振超，2016年毕业于华中农业大学。虽是生物信息学专业，毕业后抛弃生物，从事前端开发工作。一入前端深似海，在这个岗位上只有不断学习，接触新技术，才能不被淘汰。工作学习中，查阅相关资料的时候发现很多程序员有写博客记录的习惯，而我最多在有道云笔记上写几个关键词，都没有完整的整理记录。偶然在网上看到Hexo相关资料，突然脑子一热，利用周末一天搭建了属于自己的博">
+<meta name="twitter:title" content="趣玩实例——纯css实现旋转的太极图">
+<meta name="twitter:description" content="大道，在太极之上而不为高；在六极之下而不为深；先天地而不为久；长于上古而不为老。人生就是一种修行，应顺应大道至德和自然规律，不为外物所拘，“无为而无不为”。周末闲来无事，用css绘制一个太极图，在转动的阴阳图上领略生命的奥秘。在此之前你要掌握的一些基础是：
+
+
+border圆角的实现及特点
+:before和:after的使用
+css简单动画
+
+
+绘图分析要绘制一个太极图，首先要先仔细观察分析，有图">
+<meta name="twitter:image" content="http://ofi3qxlvd.bkt.clouddn.com/images/demo/taiji.gif">
 
 
 
@@ -116,10 +143,10 @@
 
 
 
-  <link rel="canonical" href="http://wangzc.cc/blog/hello-world20161021/"/>
+  <link rel="canonical" href="http://wangzc.cc/blog/demo-taiji20161030/"/>
 
 
-  <title> 博客前言 | 竹风欣海笑 </title>
+  <title> 趣玩实例——纯css实现旋转的太极图 | 竹风欣海笑 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -422,7 +449,7 @@
             
             
               
-                博客前言
+                趣玩实例——纯css实现旋转的太极图
               
             
           </h1>
@@ -434,19 +461,38 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-21T22:03:04+08:00" content="2016-10-21">
-              2016-10-21
+            <time itemprop="dateCreated" datetime="2016-10-30T21:26:53+08:00" content="2016-10-30">
+              2016-10-30
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端趣玩实例/" itemprop="url" rel="index">
+                    <span itemprop="name">前端趣玩实例</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/blog/hello-world20161021/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="blog/hello-world20161021/" itemprop="commentsCount"></span>
+                <a href="/blog/demo-taiji20161030/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="blog/demo-taiji20161030/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -456,7 +502,7 @@
 
           
           
-             <span id="/blog/hello-world20161021/" class="leancloud_visitors" data-flag-title="博客前言">
+             <span id="/blog/demo-taiji20161030/" class="leancloud_visitors" data-flag-title="趣玩实例——纯css实现旋转的太极图">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -478,19 +524,24 @@
       
 
       
-        <h3 id="欢迎来到我的博客！"><a href="#欢迎来到我的博客！" class="headerlink" title="欢迎来到我的博客！"></a>欢迎来到我的博客！</h3><p>先简单自我介绍一下，我叫王振超，2016年毕业于华中农业大学。虽是生物信息学专业，毕业后抛弃生物，从事前端开发工作。一入前端深似海，在这个岗位上只有不断学习，接触新技术，才能不被淘汰。<br>工作学习中，查阅相关资料的时候发现很多程序员有写博客记录的习惯，而我最多在有道云笔记上写几个关键词，都没有完整的整理记录。偶然在网上看到Hexo相关资料，突然脑子一热，利用周末一天搭建了属于自己的博客网站。<br>目前规划博客主要有几大版块：</p>
+        <p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/demo/taiji.gif" alt="taiji"><br>大道，在太极之上而不为高；在六极之下而不为深；先天地而不为久；长于上古而不为老。人生就是一种修行，应顺应大道至德和自然规律，不为外物所拘，“无为而无不为”。<br>周末闲来无事，用css绘制一个太极图，在转动的阴阳图上领略生命的奥秘。<br>在此之前你要掌握的一些基础是：</p>
 <blockquote>
 <ul>
-<li>前端开发工具：主要前端开发实用工具，让开发更加便利；</li>
-<li>前端技术体验：体验并介绍框架和插件；</li>
-<li>前端实用网站：一些学习和工具网站；</li>
-<li>前端奇技淫巧：总结一些技巧；</li>
-<li>前端趣玩实例：通过一些有趣的实例，活学活用；</li>
-<li>前端踩坑记录：开发中遇到的一些坑，积累经验；</li>
-<li>前端感想随笔：一些所思所想。</li>
+<li>border圆角的实现及特点</li>
+<li>:before和:after的使用</li>
+<li>css简单动画</li>
 </ul>
 </blockquote>
-<p>博客贵在坚持，在督促自己学习的同时，分享自己的知识和经验，希望能帮助更多的人。<br>另外我还想利用博客结交一些志同道合的朋友，共同学习，共同进步！</p>
+<h3 id="绘图分析"><a href="#绘图分析" class="headerlink" title="绘图分析"></a>绘图分析</h3><p>要绘制一个太极图，首先要先仔细观察分析，有图层概念的人很容易找到合成方法，如下图：<br><img src="http://ofi3qxlvd.bkt.clouddn.com/images/demo/taiji_part.jpg" alt="taiji_part"><br>看到这里，相信很多人都已经明白了，赶紧去先自己尝试一下吧！还不太明白的继续往下看。<br>我们将太极分成了三部分，利用width和border实现底部黑白主体部分，然后绘制两个width和border颜色不同的圆绝对定位到主体部分。</p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>先在html中定义一个ID为”taiji”的div<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"taiji"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>绘制主体部分<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#taiji</span>&#123;</div><div class="line"><span class="attribute">position</span>:relative;</div><div class="line"><span class="attribute">width</span>: <span class="number">98px</span>;</div><div class="line"><span class="attribute">height</span>: <span class="number">198px</span>;</div><div class="line"><span class="attribute">background-color</span>: <span class="number">#fff</span>;</div><div class="line"><span class="attribute">border</span>:<span class="number">2px</span> solid <span class="number">#000</span>;</div><div class="line"><span class="attribute">border-right-width</span>: <span class="number">100px</span>;</div><div class="line"><span class="attribute">border-radius</span>:<span class="number">50%</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>两个小圆的实现<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#taiji</span><span class="selector-pseudo">:before</span>&#123;</div><div class="line"><span class="attribute">content</span>:<span class="string">''</span>;</div><div class="line"><span class="attribute">position</span>:absolute;</div><div class="line"><span class="attribute">top</span>:<span class="number">0</span>;</div><div class="line"><span class="attribute">left</span>:<span class="number">50%</span>;</div><div class="line"><span class="attribute">width</span>: <span class="number">24px</span>;</div><div class="line"><span class="attribute">height</span>: <span class="number">24px</span>;</div><div class="line"><span class="attribute">background-color</span>: <span class="number">#000</span>;</div><div class="line"><span class="attribute">border</span>:<span class="number">37px</span> solid <span class="number">#fff</span>;</div><div class="line"><span class="attribute">border-radius</span>:<span class="number">50%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#taiji</span><span class="selector-pseudo">:after</span>&#123;</div><div class="line"><span class="attribute">content</span>:<span class="string">''</span>;</div><div class="line"><span class="attribute">position</span>:absolute;</div><div class="line"><span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line"><span class="attribute">left</span>:<span class="number">50%</span>;</div><div class="line"><span class="attribute">width</span>: <span class="number">24px</span>;</div><div class="line"><span class="attribute">height</span>: <span class="number">24px</span>;</div><div class="line"><span class="attribute">background-color</span>:<span class="number">#fff</span>;</div><div class="line"><span class="attribute">border</span>:<span class="number">37px</span> solid <span class="number">#000</span>;</div><div class="line"><span class="attribute">border-radius</span>:<span class="number">50%</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>至此，一个静态的太极图已经绘制完成，是不是很简单呢。</p>
+<h3 id="让太极图转起来"><a href="#让太极图转起来" class="headerlink" title="让太极图转起来"></a>让太极图转起来</h3><p>使用animation属性并将播放次数设为infinite就可实现无限循环转动，实现代码如下:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#taiji</span>&#123;</div><div class="line"><span class="attribute">animation</span>: rotate <span class="number">8s</span> linear infinite;</div><div class="line"><span class="attribute">-webkit-animation</span>: rotate <span class="number">8s</span> linear infinite;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">keyframes</span> rotate&#123;</div><div class="line"><span class="selector-tag">from</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(0deg)&#125;</div><div class="line"><span class="selector-tag">to</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(360deg)&#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> rotate&#123;</div><div class="line"><span class="selector-tag">from</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(0deg)&#125;</div><div class="line"><span class="selector-tag">to</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(360deg)&#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">moz</span>-<span class="keyword">keyframes</span> rotate&#123;</div><div class="line"><span class="selector-tag">from</span>&#123;<span class="attribute">-moz-transform</span>:<span class="built_in">rotate</span>(0deg)&#125;</div><div class="line"><span class="selector-tag">to</span>&#123;<span class="attribute">-moz-transform</span>:<span class="built_in">rotate</span>(360deg)&#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">ms</span>-<span class="keyword">keyframes</span> rotate&#123;</div><div class="line"><span class="selector-tag">from</span>&#123;<span class="attribute">-ms-transform</span>:<span class="built_in">rotate</span>(0deg)&#125;</div><div class="line"><span class="selector-tag">to</span>&#123;<span class="attribute">-ms-transform</span>:<span class="built_in">rotate</span>(360deg)&#125;</div><div class="line">&#125;</div><div class="line">@-<span class="keyword">o</span>-<span class="keyword">keyframes</span> rotate&#123;</div><div class="line"><span class="selector-tag">from</span>&#123;<span class="attribute">-o-transform</span>:<span class="built_in">rotate</span>(0deg)&#125;</div><div class="line"><span class="selector-tag">to</span>&#123;<span class="attribute">-o-transform</span>:<span class="built_in">rotate</span>(360deg)&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><a href="http://dabblet.com/gist/adeeac79bcf85f7aaf38487ca932b48f" target="_blank" rel="external">点我实际操作一下</a></p>
+<blockquote>
+<p>总结：在开发中也许永远也用不到这个图形，但在这个例子中可以学到很多方法，巧妙利用border-radius，可以绘制出很多形状。最后在转动太极图中去参悟人生吧！</p>
+</blockquote>
 
       
     </div>
@@ -516,18 +567,26 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Demo/" rel="tag">#Demo</a>
+          
+            <a href="/tags/css/" rel="tag">#css</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/blog/tools-git20161023/" rel="next" title="开发工具——Git笔记">
+                <i class="fa fa-chevron-left"></i> 开发工具——Git笔记
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/tools-git20161023/" rel="prev" title="开发工具——Git笔记">
-                开发工具——Git笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -542,10 +601,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="blog/hello-world20161021/"
-     data-title="博客前言"
+        <div class="ds-share flat" data-thread-key="blog/demo-taiji20161030/"
+     data-title="趣玩实例——纯css实现旋转的太极图"
      data-content=""
-     data-url="http://wangzc.cc/blog/hello-world20161021/">
+     data-url="http://wangzc.cc/blog/demo-taiji20161030/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -572,8 +631,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="blog/hello-world20161021/"
-           data-title="博客前言" data-url="http://wangzc.cc/blog/hello-world20161021/">
+      <div class="ds-thread" data-thread-key="blog/demo-taiji20161030/"
+           data-title="趣玩实例——纯css实现旋转的太极图" data-url="http://wangzc.cc/blog/demo-taiji20161030/">
       </div>
     
   </div>
@@ -700,7 +759,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#欢迎来到我的博客！"><span class="nav-text">欢迎来到我的博客！</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#绘图分析"><span class="nav-text">绘图分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-text">代码实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#让太极图转起来"><span class="nav-text">让太极图转起来</span></a></li></ol></div>
             
           </div>
         </section>

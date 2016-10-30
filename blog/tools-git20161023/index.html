@@ -95,9 +95,9 @@
 适合分布式开发，强调个体
 
 
-1. 代码上传12345git init : 初始化git仓库 git add --all / git add">
+1. 代码上传12345$ git init   #初始化git仓库 $ git add --all / $">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端开发工具——Git笔记">
+<meta property="og:title" content="开发工具——Git笔记">
 <meta property="og:url" content="http://wangzc.cc/blog/tools-git20161023/index.html">
 <meta property="og:site_name" content="竹风欣海笑">
 <meta property="og:description" content="Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。在我们的工作中也是必备的技能，作为职业中的小白，主管第一天就让我学习一下Git，熟悉Git的整个开发流程。Git具有以下特点：
@@ -109,10 +109,10 @@
 适合分布式开发，强调个体
 
 
-1. 代码上传12345git init : 初始化git仓库 git add --all / git add">
-<meta property="og:updated_time" content="2016-10-23T03:05:57.070Z">
+1. 代码上传12345$ git init   #初始化git仓库 $ git add --all / $">
+<meta property="og:updated_time" content="2016-10-30T13:30:00.805Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端开发工具——Git笔记">
+<meta name="twitter:title" content="开发工具——Git笔记">
 <meta name="twitter:description" content="Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。在我们的工作中也是必备的技能，作为职业中的小白，主管第一天就让我学习一下Git，熟悉Git的整个开发流程。Git具有以下特点：
 
 
@@ -122,7 +122,7 @@
 适合分布式开发，强调个体
 
 
-1. 代码上传12345git init : 初始化git仓库 git add --all / git add">
+1. 代码上传12345$ git init   #初始化git仓库 $ git add --all / $">
 
 
 
@@ -146,7 +146,7 @@
   <link rel="canonical" href="http://wangzc.cc/blog/tools-git20161023/"/>
 
 
-  <title> 前端开发工具——Git笔记 | 竹风欣海笑 </title>
+  <title> 开发工具——Git笔记 | 竹风欣海笑 </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -449,7 +449,7 @@
             
             
               
-                前端开发工具——Git笔记
+                开发工具——Git笔记
               
             
           </h1>
@@ -502,7 +502,7 @@
 
           
           
-             <span id="/blog/tools-git20161023/" class="leancloud_visitors" data-flag-title="前端开发工具——Git笔记">
+             <span id="/blog/tools-git20161023/" class="leancloud_visitors" data-flag-title="开发工具——Git笔记">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -533,11 +533,11 @@
 <li>适合分布式开发，强调个体</li>
 </ul>
 </blockquote>
-<h3 id="1-代码上传"><a href="#1-代码上传" class="headerlink" title="1. 代码上传"></a>1. 代码上传</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git init : 初始化git仓库 </div><div class="line">git add --all / git add . 添加本地文件到暂存区 </div><div class="line">git commit -m “你的注释” 添加本地文件到版本库 </div><div class="line">git remote add origin https://git.coding.net/ckq/dianshang.git 添加远程仓库地址 </div><div class="line">git push origin master 向远程仓库推送代码</div></pre></td></tr></table></figure>
-<h3 id="2-代码下载"><a href="#2-代码下载" class="headerlink" title="2. 代码下载"></a>2. 代码下载</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// 直接下载</div><div class="line">git clone https://git.coding.net/ckq/dianshang.git 克隆远程代码 </div><div class="line">// 抓取</div><div class="line">git init 初始化git仓库</div><div class="line">git remote add origin https://git.coding.net/ckq/dianshang.git 添加远程仓库地址 </div><div class="line">git fetch origin master 抓取远程仓库代码（只有主支） </div><div class="line">git merge origin/master 合并到本地仓库</div></pre></td></tr></table></figure>
-<h3 id="3-分支管理"><a href="#3-分支管理" class="headerlink" title="3. 分支管理"></a>3. 分支管理</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">git checkout -b dev ：创建一个名叫dev 的分支并切换到此分支 </div><div class="line">git branch 查看有几条分支 </div><div class="line">git checkout dev 切换到dev 分支 </div><div class="line">git branch -m oldname newname 更换分支名称 </div><div class="line">git merge dev 合并分支（要切换到要合并它的分支上，如 ：master） </div><div class="line">git branch -d dev 删除当前分支（强制删除：-D）</div></pre></td></tr></table></figure>
-<h3 id="4-版本回退"><a href="#4-版本回退" class="headerlink" title="4. 版本回退"></a>4. 版本回退</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git reflog : 显示回退的id </div><div class="line">git reset --hard commit-id 回到想要回退的版本 </div><div class="line">git reset --hard HEAD^^/git reset --hard HEAD~回退到上一个版本 </div><div class="line">git reset HEAD~5 撤销过去5个commit的命令，然后在添加提交</div></pre></td></tr></table></figure>
-<h3 id="5-其他命令"><a href="#5-其他命令" class="headerlink" title="5. 其他命令"></a>5. 其他命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">git --version 查看当前git版本 </div><div class="line">git help --all 查看git命令 </div><div class="line">git diff 查看当前工作区域版本库有哪些区别，修改了什么内容 </div><div class="line">git status 查看仓库当前状态 </div><div class="line">git log 查看提交的历史记录 </div><div class="line">git log --pretty=oneline 当前记录在一行显示 </div><div class="line">git reflog 可以查看所有分支的所有操作记录（包括commit和reset的操作），包括已经被删除的commit记录 </div><div class="line">git pull 更新本地仓库 </div><div class="line">git remote -v 查看远程信息库pull和fetch详细信息 </div><div class="line">git branch -r查看远程分支 </div><div class="line">git branch -a查看所有分支 </div><div class="line">git push --force origin dev 强制推荐dev分支（rebase后的分支历史改变了，可能导致不兼容现象） </div><div class="line">git remote rm 删除远程仓库 </div><div class="line">git remote show origin 查看远程仓库的信息</div></pre></td></tr></table></figure>
+<h3 id="1-代码上传"><a href="#1-代码上传" class="headerlink" title="1. 代码上传"></a>1. 代码上传</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ git init   <span class="comment">#初始化git仓库 </span></div><div class="line">$ git add --all / $ git add .  <span class="comment">#添加本地文件到暂存区 </span></div><div class="line">$ git commit -m “注释”   <span class="comment">#添加本地文件到版本库 </span></div><div class="line">$ git remote add origin https://***.git  <span class="comment">#添加远程仓库地址 </span></div><div class="line">$ git push origin master  <span class="comment">#向远程仓库推送代码</span></div></pre></td></tr></table></figure>
+<h3 id="2-代码下载"><a href="#2-代码下载" class="headerlink" title="2. 代码下载"></a>2. 代码下载</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#直接下载</span></div><div class="line">$ git <span class="built_in">clone</span> https://***.git  <span class="comment">#克隆远程代码 </span></div><div class="line"><span class="comment">#通过抓取</span></div><div class="line">$ git init  <span class="comment">#初始化git仓库</span></div><div class="line">$ git remote add origin https://***.git  <span class="comment">#添加远程仓库地址 </span></div><div class="line">$ git fetch origin master  <span class="comment">#抓取远程仓库代码（只有主支） </span></div><div class="line">$ git merge origin/master  <span class="comment">#合并到本地仓库</span></div></pre></td></tr></table></figure>
+<h3 id="3-分支管理"><a href="#3-分支管理" class="headerlink" title="3. 分支管理"></a>3. 分支管理</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$ git checkout -b dev   <span class="comment">#创建一个名叫dev 的分支并切换到此分支 </span></div><div class="line">$ git branch  <span class="comment">#查看有几条分支 </span></div><div class="line">$ git checkout dev  <span class="comment">#切换到dev 分支 </span></div><div class="line">$ git branch -m oldname newname  <span class="comment">#更换分支名称 </span></div><div class="line">$ git merge dev  <span class="comment">#合并分支（要切换到要合并它的分支上） </span></div><div class="line">$ git branch <span class="_">-d</span> dev  <span class="comment">#删除当前分支（强制删除：-D）</span></div></pre></td></tr></table></figure>
+<h3 id="4-版本回退"><a href="#4-版本回退" class="headerlink" title="4. 版本回退"></a>4. 版本回退</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git reflog   <span class="comment">#显示回退的id </span></div><div class="line">$ git reset --hard commit-id  <span class="comment">#回到想要回退的版本 </span></div><div class="line">$ git reset --hard HEAD^^/$ git reset --hard HEAD~  <span class="comment">#回退到上一个版本 </span></div><div class="line">$ git reset HEAD~5  <span class="comment">#撤销过去5个commit的命令，然后在添加提交</span></div></pre></td></tr></table></figure>
+<h3 id="5-其他命令"><a href="#5-其他命令" class="headerlink" title="5. 其他命令"></a>5. 其他命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">$ git --version   <span class="comment">#查看当前git版本 </span></div><div class="line">$ git <span class="built_in">help</span> --all   <span class="comment">#查看git命令 </span></div><div class="line">$ git diff  <span class="comment">#查看当前工作区域版本库有哪些区别，修改了什么内容 </span></div><div class="line">$ git status   <span class="comment">#查看仓库当前状态 </span></div><div class="line">$ git <span class="built_in">log</span>  <span class="comment">#查看提交的历史记录 </span></div><div class="line">$ git <span class="built_in">log</span> --pretty=oneline  <span class="comment">#当前记录在一行显示 </span></div><div class="line">$ git reflog  <span class="comment">#可以查看所有分支的所有操作记录（包括commit和reset的操作），包括已经被删除的commit记录 </span></div><div class="line">$ git pull  <span class="comment">#更新本地仓库 </span></div><div class="line">$ git remote -v  <span class="comment">#查看远程信息库pull和fetch详细信息 </span></div><div class="line">$ git branch -r  <span class="comment">#查看远程分支 </span></div><div class="line">$ git branch <span class="_">-a</span>  <span class="comment">#查看所有分支 </span></div><div class="line">$ git push --force origin dev  <span class="comment">#强制推荐dev分支（rebase后的分支历史改变了，可能导致不兼容现象） </span></div><div class="line">$ git remote rm  <span class="comment">#删除远程仓库 </span></div><div class="line">$ git remote show origin  <span class="comment">#查看远程仓库的信息</span></div></pre></td></tr></table></figure>
 <blockquote>
 <p>结束语： 命令有些多，可真正在工作中用的最多的也就几条，其他的了解一下，用到的时候翻阅笔记吧。在这里提醒一下，在提交自己代码之前一定要pull一下，不然很容易把别人辛辛苦苦码的代码覆盖，这样很容易挨揍的哦~</p>
 </blockquote>
@@ -577,13 +577,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/hello-world20161021/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/blog/hello-world20161021/" rel="next" title="博客前言">
+                <i class="fa fa-chevron-left"></i> 博客前言
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/demo-taiji20161030/" rel="prev" title="趣玩实例——纯css实现旋转的太极图">
+                趣玩实例——纯css实现旋转的太极图 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -599,7 +603,7 @@
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="blog/tools-git20161023/"
-     data-title="前端开发工具——Git笔记"
+     data-title="开发工具——Git笔记"
      data-content=""
      data-url="http://wangzc.cc/blog/tools-git20161023/">
   <div class="ds-share-inline">
@@ -629,7 +633,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="blog/tools-git20161023/"
-           data-title="前端开发工具——Git笔记" data-url="http://wangzc.cc/blog/tools-git20161023/">
+           data-title="开发工具——Git笔记" data-url="http://wangzc.cc/blog/tools-git20161023/">
       </div>
     
   </div>
@@ -674,7 +678,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -682,7 +686,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -691,7 +695,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

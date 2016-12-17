@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Title -->
+    
+    <title>
+        gallery | 竹风欣海笑
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.ico">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+
+    <!-- Meta & INfo -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="竹风">
+    <meta name="description" content="水流无意境常静，花落虽频意自闲">
+    <meta name="keywords" content="前端开发,html,css,javascript">
+
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="竹风欣海笑">
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://wangzc.cc">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="gallery | 竹风欣海笑">
+    <meta property="og:description" content="水流无意境常静，花落虽频意自闲">
+
+     <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+	body, html{
+		font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	}
+	
+    a{
+        color: #00838F
+    }
+    
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important
+    }
+    
+	/* Sidebar User Drop Down Menu Text Color */
+	#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus{
+        color: #0097A7 !important
+    }
+    
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+        color: #0097A7 !important
+    }
+    
+    .toTop{
+        background: #757575 !important
+    }
+		
+	.material-layout .material-post>.material-nav,
+	.material-layout .material-index>.material-nav,
+	.material-nav a{
+		color: #757575;
+	}
+		
+	#scheme-Paradox .MD-burger-layer {
+		background-color: #757575;
+	}
+
+	#scheme-Paradox #post-toc-trigger-btn{
+		color: #757575;
+	}
+	
+	.post-toc a:hover{
+		color: #00838F;
+		text-decoration: underline;
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-color: #F5F5F5
+        }
+		
+		/* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+            background-color: #fff;
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/css/highlight/prettify.css">
+    <link rel="stylesheet" href="/css/highlight/tomorrow-night.min.css">
+	<script src="/js/jquery.min.js"></script>
+    <script src="/js/prettify.js"></script>
+
+	<!-- UC Browser Compatible-->
+	<script>
+		var agent = navigator.userAgent.toLowerCase();
+		if(agent.indexOf('ucbrowser')>0) {
+			document.write('<link rel="stylesheet" href="/css/uc.css">');
+		   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+		}
+	</script>
+    <script>
+    $(window).load(function(){
+        $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+        prettyPrint();
+    })
+    </script>
+    <!-- Custom Head -->
+    
+</head>
+
+	
+	
+		<!-- Single Gallery Page -->
+		<link rel="stylesheet" href="/css/gallery.min.css">
+
+<body>
+	<!-- Wrapper -->
+	<div id="wrapper">
+		
+		<!-- Header -->
+		<header id="header">
+			<h1>
+				<a href="/"><strong>竹风欣海笑</strong></a> - gallery
+			</h1>
+			<nav>
+				<ul>
+					<li>
+						<a href="#footer" class="icon fa-info-circle">
+							©&nbsp;竹风
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+			
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6201608-%E6%B7%B1%E5%9C%B3.jpg" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E6%B7%B1%E5%9C%B3%E5%A4%A7%E5%AD%A6201608-%E6%B7%B1%E5%9C%B3.jpg" alt="深圳大学-深圳" /></a>
+						<h2>深圳大学-深圳</h2>
+						<p>深圳大学201608-深圳</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E8%BE%83%E5%9C%BA%E5%B0%BE201611-%E6%B7%B1%E5%9C%B3.jpg" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E8%BE%83%E5%9C%BA%E5%B0%BE201611-%E6%B7%B1%E5%9C%B3.jpg" alt="较场尾-深圳" /></a>
+						<h2>较场尾-深圳</h2>
+						<p>较场尾201611-深圳</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E8%8E%B2%E8%8A%B1%E5%B1%B1201608-%E6%B7%B1%E5%9C%B3.JPG" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E8%8E%B2%E8%8A%B1%E5%B1%B1201608-%E6%B7%B1%E5%9C%B3.JPG" alt="莲花山-深圳" /></a>
+						<h2>莲花山-深圳</h2>
+						<p>莲花山201608-深圳</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E6%AF%95%E4%B8%9A%E7%85%A7201606-%E6%AD%A6%E6%B1%89.JPG" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E6%AF%95%E4%B8%9A%E7%85%A7201606-%E6%AD%A6%E6%B1%89.JPG" alt="毕业照-武汉" /></a>
+						<h2>毕业照-武汉</h2>
+						<p>毕业照201606-武汉</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E5%B5%A9%E5%B1%B1201605-%E9%83%91%E5%B7%9E.jpg" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E5%B5%A9%E5%B1%B1201605-%E9%83%91%E5%B7%9E.jpg" alt="嵩山-郑州" /></a>
+						<h2>嵩山-郑州</h2>
+						<p>嵩山201605-郑州</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E9%BE%99%E9%97%A8%E7%9F%B3%E7%AA%9F201603-%E6%B4%9B%E9%98%B3.JPG" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E9%BE%99%E9%97%A8%E7%9F%B3%E7%AA%9F201603-%E6%B4%9B%E9%98%B3.JPG" alt="龙门石窟-洛阳" /></a>
+						<h2>龙门石窟-洛阳</h2>
+						<p>龙门石窟201603-洛阳</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E7%99%BD%E9%A9%AC%E5%AF%BA201603-%E6%B4%9B%E9%98%B3.jpg" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E7%99%BD%E9%A9%AC%E5%AF%BA201603-%E6%B4%9B%E9%98%B3.jpg" alt="白马寺-洛阳" /></a>
+						<h2>白马寺-洛阳</h2>
+						<p>白马寺201603-洛阳</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E9%BB%84%E5%B1%B1%E8%BF%8E%E5%AE%A2%E6%9D%BE201606-%E5%AE%89%E5%BE%BD.jpg" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E9%BB%84%E5%B1%B1%E8%BF%8E%E5%AE%A2%E6%9D%BE201606-%E5%AE%89%E5%BE%BD.jpg" alt="黄山迎客松-安徽" /></a>
+						<h2>黄山迎客松-安徽</h2>
+						<p>黄山迎客松201606-安徽</p>
+					</article>
+				
+					<article class="thumb">
+						<a href="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E5%AE%8F%E6%9D%91201606-%E5%AE%89%E5%BE%BD.jpg" class="image"><img src="http://ofi3qxlvd.bkt.clouddn.com/image/gallery/%E5%AE%8F%E6%9D%91201606-%E5%AE%89%E5%BE%BD.jpg" alt="宏村-安徽" /></a>
+						<h2>宏村-安徽</h2>
+						<p>宏村201606-安徽</p>
+					</article>
+				
+			
+		</div>
+		
+		<!-- Footer -->
+<!--
+		<footer id="footer" class="panel">
+			<div class="inner split">
+				<div>
+					<section>
+						<h2>Magna feugiat sed adipiscing</h2>
+						<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+					</section>
+					<section>
+						<h2>Follow me on ...</h2>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</section>
+					<p class="copyright">
+						&copy; Design: <a href="#">Gallery</a>.
+					</p>
+				</div>
+				<div>
+					<section>
+						<h2>Get in touch</h2>
+						<form method="post" action="#">
+							<div class="field half first">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="text" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send" class="special" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</form>
+					</section>
+				</div>
+			</div>
+		</footer>
+-->
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/gallery/jquery.poptrox.min.js"></script>
+	<script src="/js/gallery/skel.min.js"></script>
+	<script src="/js/gallery/util.min.js"></script>
+	<script src="/js/gallery/main.min.js"></script>
+</body>
+	
+</html>

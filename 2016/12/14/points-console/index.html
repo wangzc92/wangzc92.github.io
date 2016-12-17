@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        about | 竹风欣海笑
+        涨姿势：你真的会用console调试代码吗？ | 竹风欣海笑
     </title>
 
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://wangzc.cc">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="about | 竹风欣海笑">
+    <meta property="og:title" content="涨姿势：你真的会用console调试代码吗？ | 竹风欣海笑">
     <meta property="og:description" content="水流无意境常静，花落虽频意自闲">
 
      <!--[if lte IE 9]>
@@ -222,7 +222,7 @@
 	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
 		for="post-toc-trigger-btn">
 			
-			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#用来打印消息"><span class="post-toc-number">1.</span> <span class="post-toc-text">用来打印消息</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#统计次数console-count"><span class="post-toc-number">2.</span> <span class="post-toc-text">统计次数console.count()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#判断真假console-assert"><span class="post-toc-number">3.</span> <span class="post-toc-text">判断真假console.assert()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#查看对象信息console-dir"><span class="post-toc-number">4.</span> <span class="post-toc-text">查看对象信息console.dir()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#打印成表格console-table"><span class="post-toc-number">5.</span> <span class="post-toc-text">打印成表格console.table()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#输出信息分组console-group-和console-groupEnd"><span class="post-toc-number">6.</span> <span class="post-toc-text">输出信息分组console.group()和console.groupEnd()</span></a></li></ol>
 		
 <!--			<li class="mdl-menu__item">Some Action</li>-->
 	</ul>
@@ -255,7 +255,7 @@
 		
 	
         <p class="article-headline-p">
-            about
+            涨姿势：你真的会用console调试代码吗？
         </p>
     </div>
 
@@ -293,7 +293,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/console/">console</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/js/">js</a>
     </ul>
     
     <!-- Share -->
@@ -307,7 +307,7 @@
     <!-- Leancloud Views -->
     <a class="post_share-link" href="#">
         <li class="mdl-menu__item">
-            <span id="/about/index.html" class="leancloud-views_num" data-flag-title="about">
+            <span id="/2016/12/14/points-console/" class="leancloud-views_num" data-flag-title="涨姿势：你真的会用console调试代码吗？">
      &nbsp;浏览量
 </span>
         </li>
@@ -317,21 +317,21 @@
     
     
     <!-- Share Twitter -->
-    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=about&url=http://wangzc.cc//about/index.html&via=竹风" target="_blank">
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=涨姿势：你真的会用console调试代码吗？&url=http://wangzc.cc//2016/12/14/points-console/index.html&via=竹风" target="_blank">
         <li class="mdl-menu__item">
             分享到 Twitter
         </li>
     </a>
     
     <!-- Share Google+ -->
-    <a class="post_share-link" href="https://plus.google.com/share?url=http://wangzc.cc//about/index.html" target="_blank">
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://wangzc.cc//2016/12/14/points-console/index.html" target="_blank">
         <li class="mdl-menu__item">
             分享到 Google+
         </li>
     </a>
     
     <!-- Share Weibo -->
-    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=about&url=http://wangzc.cc//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=涨姿势：你真的会用console调试代码吗？&url=http://wangzc.cc//2016/12/14/points-console/index.html&pic=&searchPic=false&style=simple" target="_blank">
         <li class="mdl-menu__item">
             分享到微博
         </li>
@@ -343,7 +343,36 @@
                 <!-- Post Content -->
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
 	
-		
+		<blockquote>
+<p>如果你是开发测试人员，一定对console不陌生。如果是初学者，恐怕只知道console.log()啦。对于整个的console家族，你又了解多少呢？我们使用console对js进行调试，但js原生中默认是没有console对象的，它是宿主对象，也就是浏览器提供的内置对象，所以浏览器不同，console对象也会有些许差异。使用console.log(console)打印出浏览器中的console对象，看看你用过哪些？</p>
+</blockquote>
+<p>下面是chrome浏览器截图：</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console0.jpg" alt="console"></p>
+<p>仔细看一下，还真的不少呢。接下来介绍几个常用的console方法。</p>
+<h2 id="用来打印消息"><a href="#用来打印消息" class="headerlink" title="用来打印消息"></a>用来打印消息</h2><ul>
+<li>打印字符串：console.log()</li>
+<li>打印提示消息：console.info()</li>
+<li>打印警告消息：console.warn()</li>
+<li>打印错误消息：console.error()</li>
+<li>打印调试信息：console.debug()</li>
+</ul>
+<p>这几个方法都可以接受多个参数，逗号分隔。它会在每次输出结尾添加换行符。没有返回值就返回undefined。另外这五种方法都可以使用printf风格占位符，字符（%s）、整数（%d或%i）、浮点数（%f）和对象（%o）四种。如果第一个参数是格式字符串，方法会将依次用后面的参数替换占位符，然后再进行输出。五种方法示例如下：</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console1.jpg" alt="console.log"></p>
+<h2 id="统计次数console-count"><a href="#统计次数console-count" class="headerlink" title="统计次数console.count()"></a>统计次数console.count()</h2><p>有时候我们需要统计一个函数被调用了几次，一般都是加入一个变量然后输出。现在，我们可以直接使用console.count()来帮助我们统计并输出。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console2.jpg" alt="console.count"></p>
+<h2 id="判断真假console-assert"><a href="#判断真假console-assert" class="headerlink" title="判断真假console.assert()"></a>判断真假console.assert()</h2><p>我们写代码的时候总会碰到判断某个变量是否为真，这个时候可以console.assert()来判断，当表达式为false的时候，输出信息到控制台。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console3.jpg" alt="console.assert"></p>
+<h2 id="查看对象信息console-dir"><a href="#查看对象信息console-dir" class="headerlink" title="查看对象信息console.dir()"></a>查看对象信息console.dir()</h2><p>如果想要看详细的对象信息，我们可以使用 console.dir，将一个 JavaScript 对象的所有属性和属性值显示成一个可交互的列表，它还能打印出函数等。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console4.jpg" alt="console.dir"></p>
+<h2 id="打印成表格console-table"><a href="#打印成表格console-table" class="headerlink" title="打印成表格console.table()"></a>打印成表格console.table()</h2><p>可以将传入的对象或数组这些复合数据以表格的形式输出。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console5.jpg" alt="console.table"></p>
+<h2 id="输出信息分组console-group-和console-groupEnd"><a href="#输出信息分组console-group-和console-groupEnd" class="headerlink" title="输出信息分组console.group()和console.groupEnd()"></a>输出信息分组console.group()和console.groupEnd()</h2><p>如果输出信息比较多，可以进行分组管理。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console6.jpg" alt="console.group"></p>
+<blockquote>
+<p>console方法还有很多，这里就不一一列举了，想了解更多请自行查阅官方API文档。掌握这些方法，对我们调试代码很有帮助。</p>
+<p>竹风原创，欢迎交流学习。转载请附上本文链接，谢谢！</p>
+</blockquote>
+
 	
 	
 	
@@ -370,9 +399,9 @@
 <div id="comments">
     <!-- 多说评论框 start -->
         <div class="ds-thread" 
-            data-thread-key="about/index.html" 
-            data-url="http://wangzc.cc//about/index.html"
-            data-title="about"></div>
+            data-thread-key="2016/12/14/points-console/" 
+            data-url="http://wangzc.cc//2016/12/14/points-console/index.html"
+            data-title="涨姿势：你真的会用console调试代码吗？"></div>
     <!-- 多说评论框 end -->
 </div>
 
@@ -384,6 +413,14 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     
     <!-- Prev Nav -->
+    
+        <a href="/2016/12/15/demos-taiji/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
     
 
     <!-- Section Spacer -->

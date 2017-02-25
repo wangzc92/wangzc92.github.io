@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        趣玩Demo:纯css实现旋转的太极图 | 竹风欣海笑
+        css小技巧：巧用padding实现iframe等比例缩放 | 竹风欣海笑
     </title>
 
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://wangzc.cc">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="趣玩Demo:纯css实现旋转的太极图 | 竹风欣海笑">
+    <meta property="og:title" content="css小技巧：巧用padding实现iframe等比例缩放 | 竹风欣海笑">
     <meta property="og:description" content="水流无意境常静，花落虽频意自闲">
 
      <!--[if lte IE 9]>
@@ -222,7 +222,7 @@
 	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
 		for="post-toc-trigger-btn">
 			
-			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#绘图分析"><span class="post-toc-number">1.</span> <span class="post-toc-text">绘图分析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#代码实现"><span class="post-toc-number">2.</span> <span class="post-toc-text">代码实现</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#让太极图转起来"><span class="post-toc-number">3.</span> <span class="post-toc-text">让太极图转起来</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#在线体验"><span class="post-toc-number">4.</span> <span class="post-toc-text">在线体验</span></a></li></ol>
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#问题来源"><span class="post-toc-number">1.</span> <span class="post-toc-text">问题来源</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#解决方案"><span class="post-toc-number">2.</span> <span class="post-toc-text">解决方案</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#原理解析"><span class="post-toc-number">3.</span> <span class="post-toc-text">原理解析</span></a></li></ol>
 		
 <!--			<li class="mdl-menu__item">Some Action</li>-->
 	</ul>
@@ -255,7 +255,7 @@
 		
 	
         <p class="article-headline-p">
-            趣玩Demo:纯css实现旋转的太极图
+            css小技巧：巧用padding实现iframe等比例缩放
         </p>
     </div>
 
@@ -273,7 +273,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>竹风</strong>
-        <span>12月 15, 2016</span>
+        <span>12月 23, 2016</span>
     </div>
     
     <div class="section-spacer"></div>
@@ -307,7 +307,7 @@
     <!-- Leancloud Views -->
     <a class="post_share-link" href="#">
         <li class="mdl-menu__item">
-            <span id="/demos-taiji/" class="leancloud-views_num" data-flag-title="趣玩Demo:纯css实现旋转的太极图">
+            <span id="/skills-iframe/" class="leancloud-views_num" data-flag-title="css小技巧：巧用padding实现iframe等比例缩放">
      &nbsp;浏览量
 </span>
         </li>
@@ -317,21 +317,21 @@
     
     
     <!-- Share Twitter -->
-    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=趣玩Demo:纯css实现旋转的太极图&url=http://wangzc.cc//demos-taiji/index.html&via=竹风" target="_blank">
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=css小技巧：巧用padding实现iframe等比例缩放&url=http://wangzc.cc//skills-iframe/index.html&via=竹风" target="_blank">
         <li class="mdl-menu__item">
             分享到 Twitter
         </li>
     </a>
     
     <!-- Share Google+ -->
-    <a class="post_share-link" href="https://plus.google.com/share?url=http://wangzc.cc//demos-taiji/index.html" target="_blank">
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://wangzc.cc//skills-iframe/index.html" target="_blank">
         <li class="mdl-menu__item">
             分享到 Google+
         </li>
     </a>
     
     <!-- Share Weibo -->
-    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=趣玩Demo:纯css实现旋转的太极图&url=http://wangzc.cc//demos-taiji/index.html&pic=&searchPic=false&style=simple" target="_blank">
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=css小技巧：巧用padding实现iframe等比例缩放&url=http://wangzc.cc//skills-iframe/index.html&pic=&searchPic=false&style=simple" target="_blank">
         <li class="mdl-menu__item">
             分享到微博
         </li>
@@ -344,88 +344,35 @@
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
 	
 		<blockquote>
-<p>大道，在太极之上而不为高；在六极之下而不为深；先天地而不为久；长于上古而不为老。人生就是一种修行，应顺应大道至德和自然规律，不为外物所拘，“无为而无不为”。周末闲来无事，用css绘制一个太极图，在转动的阴阳图上领略生命的奥秘。</p>
+<p>我们经常会遇到需要将其他视频网站上的视频插入到自己的页面中，从视频网站上获取的代码是固定宽高的iframe，如果自己的页面是响应式的，如何将iframe适配到各个设备成了问题。网上有很多使用js动态设置高度来实现，而一向坚持“能够使用css实现的就不去写js”原则的我，发现了一种巧妙的方法解决这个问题。</p>
 </blockquote>
-<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/demo/taiji.gif" alt="taiji"></p>
-<p>在此之前你要掌握的一些基础是：</p>
-<ul>
-<li>border圆角的实现及特点</li>
-<li>:before和:after的使用</li>
-<li>css简单动画</li>
-</ul>
-<h2 id="绘图分析"><a href="#绘图分析" class="headerlink" title="绘图分析"></a>绘图分析</h2><p>要绘制一个太极图，首先要先仔细观察分析，有图层概念的人很容易找到合成方法，如下图：</p>
-<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/demo/taiji_part.jpg" alt="taiji_part"></p>
-<p>看到这里，相信很多人都已经明白了，赶紧去先自己尝试一下吧！还不太明白的继续往下看。</p>
-<p>我们将太极分成了三部分，利用width和border实现底部黑白主体部分，然后绘制两个width和border颜色不同的圆绝对定位到主体部分。</p>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><p>先在html中定义一个ID为”taiji”的div</p>
-<pre><code class="html">&lt;div id=&quot;taiji&quot;&gt;&lt;/div&gt;
+<h2 id="问题来源"><a href="#问题来源" class="headerlink" title="问题来源"></a>问题来源</h2><p>iframe作为一种内联框架，经常用于在页面中嵌套另一个页面或多媒体文件。iframe标签要定高度才能撑开，高度写死适配又会出现各种问题。拿使用较多的插入视频为例，高度太高，上下会出现黑边。高度太低，播放时左右又会有黑边。</p>
+<p>一般我们从视频网站粘贴过来的代码如下：</p>
+<pre><code class="html">&lt;iframe width=&quot;560&quot; height=&quot;280&quot; src=&quot;https://www.youtube.com/embed/Um7pMggPnug&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
 </code></pre>
-<p>绘制主体部分</p>
-<pre><code class="css">#taiji{
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>巧用padding的百分比来解决问题。</p>
+<p>在iframe外层嵌套一层div，宽度根据页面布局设置，此例中估且设为100%全屏,高度设为0，使用padding撑开盒子高度。padding值根据视频宽高比例进行设置。最后设置iframe为绝对定位铺满全屏即可。</p>
+<pre><code class="html">&lt;div class=&quot;video&quot;&gt;
+    &lt;iframe  src=&quot;https://www.youtube.com/embed/Um7pMggPnug&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="css">.video{
     position:relative;
-    width: 98px;
-    height: 198px;
-    background-color: #fff;
-    border:2px solid #000;
-    border-right-width: 100px;
-    border-radius:50%;
+    width:100%;
+    height:0;
+    padding-bottom:56.25%;
 }
-</code></pre>
-<p>两个小圆的实现</p>
-<pre><code class="css">#taiji:before{
-    content:&#39;&#39;;
+.video iframe{
     position:absolute;
+    width:100%;
+    height:100%;
     top:0;
-    left:50%;
-    width: 24px;
-    height: 24px;
-    background-color: #000;
-    border:37px solid #fff;
-    border-radius:50%;
-}
-#taiji:after{
-    content:&#39;&#39;;
-    position:absolute;
-    top:50%;
-    left:50%;
-    width: 24px;
-    height: 24px;
-    background-color:#fff;
-    border:37px solid #000;
-    border-radius:50%;
+    left:0;
 }
 </code></pre>
-<p>至此，一个静态的太极图已经绘制完成，是不是很简单呢。</p>
-<h2 id="让太极图转起来"><a href="#让太极图转起来" class="headerlink" title="让太极图转起来"></a>让太极图转起来</h2><p>使用animation属性并将播放次数设为infinite就可实现无限循环转动，实现代码如下:</p>
-<pre><code class="css">#taiji{
-animation: rotate 8s linear infinite;
--webkit-animation: rotate 8s linear infinite;
-}
-@keyframes rotate{
-from{-webkit-transform:rotate(0deg)}
-to{-webkit-transform:rotate(360deg)}
-}
-@-webkit-keyframes rotate{
-from{-webkit-transform:rotate(0deg)}
-to{-webkit-transform:rotate(360deg)}
-}
-@-moz-keyframes rotate{
-from{-moz-transform:rotate(0deg)}
-to{-moz-transform:rotate(360deg)}
-}
-@-ms-keyframes rotate{
-from{-ms-transform:rotate(0deg)}
-to{-ms-transform:rotate(360deg)}
-}
-@-o-keyframes rotate{
-from{-o-transform:rotate(0deg)}
-to{-o-transform:rotate(360deg)}
-}
-</code></pre>
-<h2 id="在线体验"><a href="#在线体验" class="headerlink" title="在线体验"></a>在线体验</h2><iframe src="http://dabblet.com/gist/adeeac79bcf85f7aaf38487ca932b48f" width="700px" height="500px" frameborder="0" scrolling="no"></iframe>
-
+<h2 id="原理解析"><a href="#原理解析" class="headerlink" title="原理解析"></a>原理解析</h2><p>重点：当padding/margin取形式为百分比的值时，无论是left/right，还是top/bottom，都是以父元素的width为参照物的！</p>
 <blockquote>
-<p>总结：在开发中也许永远也用不到这个图形，但在这个例子中可以学到很多方法，巧妙利用border-radius，可以绘制出很多形状。最后在转动太极图中去参悟人生吧！</p>
+<p>结束语： 小小css能够简单实现多行js代码中才能够完成的效果，在工作学习中千万不可忽略css的大作用。</p>
 <p>竹风原创，欢迎交流学习。转载请附上本文链接，谢谢！</p>
 </blockquote>
 
@@ -455,9 +402,9 @@ to{-o-transform:rotate(360deg)}
 <div id="comments">
     <!-- 多说评论框 start -->
         <div class="ds-thread" 
-            data-thread-key="2016121517" 
-            data-url="http://wangzc.cc//demos-taiji/index.html"
-            data-title="趣玩Demo:纯css实现旋转的太极图"></div>
+            data-thread-key="2016122310" 
+            data-url="http://wangzc.cc//skills-iframe/index.html"
+            data-title="css小技巧：巧用padding实现iframe等比例缩放"></div>
     <!-- 多说评论框 end -->
 </div>
 
@@ -470,7 +417,7 @@ to{-o-transform:rotate(360deg)}
     
     <!-- Prev Nav -->
     
-        <a href="/tools-git/" id="post_nav-newer" class="prev-content">
+        <a href="/thinks-beginner/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -484,7 +431,7 @@ to{-o-transform:rotate(360deg)}
 
     <!-- Next Nav -->
     
-        <a href="/points-console/" id="post_nav-older" class="next-content">
+        <a href="/points-nth/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">

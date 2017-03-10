@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>Web前端开发工程师编程能力飞升之路 | 笑笑前端圈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="前端工程师" />
+    
+    <meta name="description" content="最近在网上看到这篇“Web前端开发工程师编程能力飞升之路”的文章，受益颇深，故转载到博客中，勉励自己。作者把前端技术按照《入门》《登堂》《入室》《入微》《化蝶》《大侠》《宗师》来划分等级，每个级别都提供了进阶之路，帮助在该等级迷茫的人们早日突破自己，更上一层楼。
+
+背景如果你是刚进入web前端研发领域，想试试这潭水有多深，看这篇文章吧；
+如果你是做了两三年web产品前端研发，迷茫找不着提高之路，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web前端开发工程师编程能力飞升之路">
+<meta property="og:url" content="http://xiaoxiaoqd.com/blog/ms-beginner/index.html">
+<meta property="og:site_name" content="笑笑前端圈">
+<meta property="og:description" content="最近在网上看到这篇“Web前端开发工程师编程能力飞升之路”的文章，受益颇深，故转载到博客中，勉励自己。作者把前端技术按照《入门》《登堂》《入室》《入微》《化蝶》《大侠》《宗师》来划分等级，每个级别都提供了进阶之路，帮助在该等级迷茫的人们早日突破自己，更上一层楼。
+
+背景如果你是刚进入web前端研发领域，想试试这潭水有多深，看这篇文章吧；
+如果你是做了两三年web产品前端研发，迷茫找不着提高之路，">
+<meta property="og:updated_time" content="2017-03-10T05:37:13.593Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Web前端开发工程师编程能力飞升之路">
+<meta name="twitter:description" content="最近在网上看到这篇“Web前端开发工程师编程能力飞升之路”的文章，受益颇深，故转载到博客中，勉励自己。作者把前端技术按照《入门》《登堂》《入室》《入微》《化蝶》《大侠》《宗师》来划分等级，每个级别都提供了进阶之路，帮助在该等级迷茫的人们早日突破自己，更上一层楼。
+
+背景如果你是刚进入web前端研发领域，想试试这潭水有多深，看这篇文章吧；
+如果你是做了两三年web产品前端研发，迷茫找不着提高之路，">
+    
+
+    
+        <link rel="alternate" href="/" title="笑笑前端圈" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">纯净前端知识分享平台</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端基础/">前端基础</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端基础/CSS/">CSS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端基础/Javascript/">Javascript</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/面试宝典/">面试宝典</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/面试宝典/">面试宝典</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-ms-beginner" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Web前端开发工程师编程能力飞升之路
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-subtitle">
+                <a href="/blog/ms-beginner/" class="article-date">
+    <time datetime="2017-03-10T05:32:00.000Z" itemprop="datePublished">2017-03-10</time>
+</a>
+                <span id="/blog/ms-beginner/" class="leancloud-views_num" data-flag-title="Web前端开发工程师编程能力飞升之路">
+     &nbsp;阅读量
+</span>
+
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端工程师/">前端工程师</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <blockquote>
+<p>最近在网上看到这篇“Web前端开发工程师编程能力飞升之路”的文章，受益颇深，故转载到博客中，勉励自己。作者把前端技术按照《入门》《登堂》《入室》《入微》《化蝶》《大侠》《宗师》来划分等级，每个级别都提供了进阶之路，帮助在该等级迷茫的人们早日突破自己，更上一层楼。</p>
+</blockquote>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>如果你是刚进入web前端研发领域，想试试这潭水有多深，看这篇文章吧；</p>
+<p>如果你是做了两三年web产品前端研发，迷茫找不着提高之路，看这篇文章吧；</p>
+<p>如果你是四五年的前端开发高手，没有难题能难得住你的寂寞高手，来看这篇文章吧；</p>
+<p>web前端研发工程师，在国内是一个朝阳职业，自07-08年正式有这个职业以来，也不过三四年的时间。这个领域没有学校的正规教育，没有行内成体 系的理论指引，几乎所有从事这个职业的人都是靠自己自学成才。自学成才，一条艰辛的坎坷路，我也是这样一路走来。从2002年开始接触web前端研发至今 已然有了9个年头，如今再回首，期间的走了很多弯路。推已及人，如果能让那些后来者少走些弯路，辛甚辛甚！</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>所谓的天才，只不过是比平常人更快的掌握技能、完成工作罢了；只要你找到了正确的方向，并辅以足够的时间，你一样能够踏上成功彼岸。</p>
+<p>本文将web前端研发编程能力划分了八个等级，每个等级都列举出了对应的特征及破级提升之方法，希望每位在看本文的同学先准确定位自己的等级（不要以你目前能力的最高点，而是以你当前能力的中档与之等级作对比，以免多走弯路），参考突破之法破之。</p>
+<p>所谓的级别，只是你面对需求时的一种态度：能够完成、能够完美地完成、能够超出预期地完成。以追求完美的态度加以扎实的编程功力，那就是你的编程水平。</p>
+<p>切记心浮气燥，级别够了，那级别里的东西自然就懂了。悟了就是悟了，没悟也没关系，静下心来，投入时间而已。</p>
+<h2 id="一、入门"><a href="#一、入门" class="headerlink" title="一、入门"></a>一、入门</h2><p>能够解决一些问题的水平。有一定的基础（比如最常见的html标签及其属性、事件、方法；最常见的css属性；基础的javascript编程能力），能够完成一些简单的web前端研发需求。</p>
+<p>举个例子：删除一字符串中指定的字符。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str=<span class="string">"www.baidu.com/?page"</span>;</div><div class="line">str=str.replace(<span class="string">'?page'</span>,<span class="string">""</span>);</div><div class="line">alert(str);</div><div class="line">str=str.substring(<span class="number">0</span>,str.indexof(<span class="string">"/"</span>));</div><div class="line">alert(str);</div></pre></td></tr></table></figure>
+<p>首先不要苛责代码的对错严谨，毕竟每个程序员都有这样的一个过程；其次，这两段代码在这个实例里没有什么大过错，可能会有瑕疵，但能够解决问题（删除指定的字符），这就是这个级别的特征。</p>
+<p>再举个例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 计算系统当前是星期几</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">""</span>;</div><div class="line"><span class="keyword">var</span> week = <span class="keyword">new</span> date().getday();</div><div class="line"><span class="keyword">if</span> (week == <span class="number">0</span>) &#123;</div><div class="line">        str = <span class="string">"今天是星期日"</span>;</div><div class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (week == <span class="number">1</span>) &#123;</div><div class="line">        str = <span class="string">"今天是星期一"</span>;</div><div class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (week == <span class="number">2</span>) &#123;</div><div class="line">        str = <span class="string">"今天是星期二"</span>;</div><div class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (week == <span class="number">3</span>) &#123;</div><div class="line">        str = <span class="string">"今天是星期三"</span>;</div><div class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (week == <span class="number">4</span>) &#123;</div><div class="line">        str = <span class="string">"今天是星期四"</span>;</div><div class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (week == <span class="number">5</span>) &#123;</div><div class="line">        str = <span class="string">"今天是星期五"</span>;</div><div class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (week == <span class="number">6</span>) &#123;</div><div class="line">        str = <span class="string">"今天是星期六"</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 或者更好一些</span></div><div class="line"><span class="keyword">var</span> str1 = <span class="string">"今天是星期"</span>;</div><div class="line"><span class="keyword">var</span> week = <span class="keyword">new</span> date().getday();</div><div class="line"><span class="keyword">switch</span> (week) &#123;</div><div class="line">    <span class="keyword">case</span> <span class="number">0</span> :</div><div class="line">        str1 += <span class="string">"日"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">1</span> :</div><div class="line">        str1 += <span class="string">"一"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">2</span> :</div><div class="line">        str1 += <span class="string">"二"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">3</span> :</div><div class="line">        str1 += <span class="string">"三"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">4</span> :</div><div class="line">        str1 += <span class="string">"四"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">5</span> :</div><div class="line">        str1 += <span class="string">"五"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">    <span class="keyword">case</span> <span class="number">6</span> :</div><div class="line">        str1 += <span class="string">"六"</span>;</div><div class="line">        <span class="keyword">break</span>;</div><div class="line">&#125;</div><div class="line">alert(str);</div><div class="line">alert(str1);</div></pre></td></tr></table></figure>
+<p>入门”阶段是每个程序员的必经之路，只要”入门”，你就上路了。所谓”师傅领进门，修行靠个人”，有了这个”入门”的基础，自己就可以摸索着前进了。</p>
+<h3 id="进阶之路"><a href="#进阶之路" class="headerlink" title="进阶之路"></a>进阶之路</h3><p>将javascript、html、css之类的编码帮助手册里的每个方法/属性都通读几遍！只有将基础打好，以后的路才能走的顺畅。参考这些帮助文档，力争写出无瑕疵的代码。</p>
+<p>这些编码文档建议不仅是在入门提高期看，在你以后每个阶段破阶的时候都应该看看，最基础的东西往往也是最给力的东西，有时能够给你带来意想不到的收获。</p>
+<h2 id="二、登堂"><a href="#二、登堂" class="headerlink" title="二、登堂"></a>二、登堂</h2><p>能够正确地解决问题。不管你是通过搜索网络，或者通过改造某些成品代码（jquery/dojo/ext/yui）案例，只要能够无错地完成需求。</p>
+<p>同样以上面的那段”字符串剪裁”代码为例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str=<span class="string">"www.baidu.com/?page"</span>;</div><div class="line">str=str.replace(<span class="regexp">/?page/</span>,<span class="string">""</span>);</div><div class="line">alert(str);</div></pre></td></tr></table></figure>
+<p>仅仅解决问题对于”登堂”阶段来说已经不是问题，这个级别所给出方案不能是漏洞百出。以上面这段代码为例：replace方法的第一个参数虽然可以支持字符串，但最佳的类型是正则表达式；</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> array(<span class="string">"日"</span>, <span class="string">"一"</span>, <span class="string">"二"</span>, <span class="string">"三"</span>, <span class="string">"四"</span>, <span class="string">"五"</span>, <span class="string">"六"</span>);</div><div class="line"><span class="keyword">var</span> week = <span class="keyword">new</span> date().getday();</div><div class="line"><span class="keyword">var</span> str = <span class="string">"今天是星期"</span>+ a[week];</div><div class="line">alert(str);</div></pre></td></tr></table></figure>
+<p>对比”入门级”的代码，不管是从代码量、代码效率、代码优美性、代码思路来说，”登堂”级的这个日期处理代码都要优秀很多。</p>
+<h3 id="进阶之路-1"><a href="#进阶之路-1" class="headerlink" title="进阶之路"></a>进阶之路</h3><p>这个阶段虽然能够给出正确的解题方案，但是不一定是最优秀的方案。如何才能得到最优秀的方案呢？首先就是积累各种能够解决需求的方案，然后再验证每个方案，在这些方案中选择最好的一种。因此该阶段的进阶之路就是”行万里路，看万卷书”，积累各个需求的各个解决方案。</p>
+<p>你可以扎身在专业论坛（蓝色理想、无忧、csdn）里，通读所有的faq及帖子；你可以打开搜索引擎，穷举所有的搜索结果。自己建立测试环境一一验  证这些代码：去揣摩每段代码的意图，去比较每段代码之间的差异。这两条路可以让你快速完成原始积累，当你再面对大多数需求时能够说这些问题我以前做过，那  你就水到渠成地晋阶了。</p>
+<h2 id="三、入室"><a href="#三、入室" class="headerlink" title="三、入室"></a>三、入室</h2><p>最强代码，知道所有能够解决需求的各种方案，能够选择使用最优秀的方案满足需求。这个级别基本上产品开发编程中的代码主力。给出的一招一式，招招都是绝招。</p>
+<p>还以上面的那个例子为例，你能说出1、2、3之间的差别，以及适用于那种环境吗？</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str=<span class="string">"www.baidu.com/?page"</span>;</div><div class="line"><span class="comment">// 1、字符串剪裁</span></div><div class="line">str.substring(<span class="number">0</span>, str.indexof(<span class="string">"?page"</span>));</div><div class="line"><span class="comment">// 2、正则表达式</span></div><div class="line">str.replace(<span class="regexp">/?page/</span>, <span class="string">""</span>);</div><div class="line"><span class="comment">// 3、字符串分拆、合并</span></div><div class="line">str.split(<span class="string">"?page"</span>).join(<span class="string">""</span>);</div></pre></td></tr></table></figure>
+<p>能够解决问题的方法会有很多，但是对于程序员来说应该选择最优秀的。上面这段代码从代码量来说”正则表达式”最优秀；从代码执行效率来说： “字符串剪裁”法最高（chrome中”正则表达式”效率最高），split法最次；从可扩展性上来说，”正则表达式”法最优。具体使用那种方案视具体的  需求环境而定。</p>
+<p>“入室”阶段，程序员应该能够肯定的回答：对于这个需求而言，我的代码就是最优秀的代码。</p>
+<p>再以”今天是星期几”为例，”登堂”级的代码你敢说是最优秀的代码了吗？</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 计算系统当前是星期几</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"今天是星期"</span> + <span class="string">"日一二三四五六"</span>.charat(<span class="keyword">new</span> date().getday());</div></pre></td></tr></table></figure>
+<p>对比”登堂”级的示例代码，上面这段代码给你什么感受？程序员追求的就是完美。”入室”级别追求的就是每一招每一式的完美无缺。</p>
+<p>从web前端编程来说，通过2年左右的努力，很多人能够达到这个水平，但是，很大一部分人的编程能力也就止步于此。或限于产品的需求单一性，或限于需求开发的时间紧迫性，或限于人的惰性，能够完美地解决当前的需求就够了。</p>
+<p>由于长期处于技术平台期，技术上得不到提高，通常这个级别的工程师会比较燥。技术上小有所成；或追求个人的突破；或追求产品差异性带来的新鲜感；或者只是想换个心情；因此很多此级别的工程师会经常换公司。</p>
+<p>戒骄戒躁：</p>
+<p>切勿以为自己能写一手漂亮的代码而自满；</p>
+<p>切莫以为别人”尊称”你一声”大侠”你就以 “大侠”自居；</p>
+<p>切莫以为自己积累了一些得意的代码就成了框架式开发。</p>
+<p>细节决定成败，优秀的方案并不能保证最终的成功。还以”删除指定字符串”为例，原始字符串从格式上来看应该是了个url链接，在去除”pn=0″之 后，最末尾处留了一个尾巴”?”；如果原始字符串是”<a href="http://www.xxx.com/?pn=0&amp;a=1″，去除”pn=0″之后" target="_blank" rel="external">http://www.xxx.com/?pn=0&amp;a=1″，去除”pn=0″之后</a> ? 和 &amp; 两个符号紧贴一起，这更是明显的bug。</p>
+<h3 id="进阶之路-2"><a href="#进阶之路-2" class="headerlink" title="进阶之路"></a>进阶之路</h3><p>此阶段进阶之路就是：切勿心浮气躁；你不再被需求牵着走，而是你牵着需求走。注重细节，注意那些当前需求里没有明文给出的细节：代码性能的差异、运行平台（浏览器）的差异、需求的隐性扩展、代码的向后兼容等等。</p>
+<p>再通读几遍html/css/javascript帮助文档。</p>
+<p>我建议这个级别的工程师做一做webtreeview控件，要求总节点量一万左右操作流畅，你的晋升之路就在这个控件的编码过程中。</p>
+<h2 id="四、入微"><a href="#四、入微" class="headerlink" title="四、入微"></a>四、入微</h2><p>最强解决方案。你能够走在需求的前面，将当前需求里有的、没有直接提出来的、现在暂时没有但将来可能有的等等，及前端编程潜规则等各个方方面面都综合考虑，给出最优方案。以一招胜万招。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">"http://www.xxx.com/?pn=0"</span>;   <span class="comment">// 删除指定字符 pn=0</span></div><div class="line"><span class="comment">// 我将这个字符串里所可能想到的各种情况都列举出来</span></div><div class="line"><span class="keyword">var</span> a = [</div><div class="line">     <span class="string">"http://www.xxx.com/vmpn=?pn=0"</span><span class="comment">// pn= 可能出现在 ? 前</span></div><div class="line">    , <span class="string">"http://www.xxx.com/vmpn=?pn="</span><span class="comment">// url里允许pn 值为空</span></div><div class="line">    , <span class="string">"http://www.xxx.com/vmpn=?pn=0&amp;a=1"</span><span class="comment">// url 里可有多个字段</span></div><div class="line">    , <span class="string">"http://www.xxx.com/vmpn=?a=1&amp;pn=0"</span><span class="comment">// 可能排在最后</span></div><div class="line">    , <span class="string">"http://www.xxx.com/vmpn=?a=1&amp;pn=0&amp;pn=1"</span><span class="comment">// 可能有多个 pn 字段</span></div><div class="line">    , <span class="string">"http://www.xxx.com/vmpn=?a=1&amp;pn=0&amp;b=2"</span><span class="comment">// 可能在中间</span></div><div class="line">    , <span class="string">"http://www.xxx.com/vmpn=?a=1&amp;pn=0&amp;pn=1&amp;b=1"</span>  <span class="comment">// 可能在中间成组</span></div><div class="line">    , <span class="string">"http://www.xxx.com/vmpn=?a=1&amp;pn=0&amp;b=1&amp;pn=1"</span>  <span class="comment">// 可能零星分布</span></div><div class="line">];</div><div class="line"><span class="comment">/* 需求的不言之秘：</span></div><div class="line">? 若出现在字符串最尾则要去之</div><div class="line">? &amp; 两个符号不可重叠</div><div class="line">*/</div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/((\?)(pn=[^&amp;]*&amp;)+(?!pn=))|(((\?|&amp;)pn=[^&amp;]*)+$)|(&amp;pn=[^&amp;]*)/g</span>;</div><div class="line"></div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a.length; i++) &#123;</div><div class="line">    alert(a + <span class="string">"\n"</span> + a.replace(reg, <span class="string">"$2"</span>));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这个阶段已经不再追求一招一式，对你来说不是使用什么创新绝招解决需求，而是给出成熟稳重的方案，从根上解决问题。针对某个当前需求你的代码可能不是最优，但是针对此类的需求你的代码却是最优秀的代码。</p>
+<h3 id="进阶之路-3"><a href="#进阶之路-3" class="headerlink" title="进阶之路"></a>进阶之路</h3><p>很多web前端研发工程师在做了3-4年之后就会进入一个瓶颈期：产品开发需求是小菜一碟，没有新鲜的可以挑战的东西；代码开发中的稀奇的解题方法  都已经尝试过。没有了可挑战的难题，失去了探索的激情，也就没有了再上升的动力，好不容易走过”入室”级别的人又会有八九成止步于此。或转做技术领导人，  或转到其它的领域，或换公司。</p>
+<p>这些人的上升之路在哪里呢？</p>
+<p>这个阶段单单依靠技巧和数量的累积已经没有什么效果了，突破之路在第5层《化蝶》里会详细说明，我建议你在这个阶段末尾着重关注编程理论：面向对象/过程、代码组织形式、编译、代码规范、其它的框架设计等等。</p>
+<p>我建议这个级别的工程师做一做webeditor控件，不要求完整功能，但是该控件里的模块划分、代码组织、编程思想做到位，给出一个系统的解决方案。</p>
+<h2 id="五、化蝶"><a href="#五、化蝶" class="headerlink" title="五、化蝶"></a>五、化蝶</h2><p>破茧重生，这个层次关注的是编程语言本身，而不再关心产品需求。什么是茧？产品需求就是茧。当你一招胜万招，打遍天下需求之时，你如果还拘泥于需求开发，那就是你限于茧中而不自知。要么就在这个茧里默默地老去，要么就破开茧获得新生。</p>
+<p>还是以那个”字符串剪裁”的老例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line">* 在拼接正则表达式字符串时，消除原字符串中特殊字符对正则表达式的干扰</div><div class="line">* @author:meizz</div><div class="line">* @version: 2010/12/16</div><div class="line">* @param      &#123;string&#125;        str     被正则表达式字符串保护编码的字符串</div><div class="line">* @return     &#123;string&#125;                被保护处理过后的字符串</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">escapereg</span>(<span class="params">str</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> str.replace(<span class="keyword">new</span> regexp(<span class="string">"([.*+?^=!:\x24&#123;&#125;()|[\\]\/\\\\])"</span>, <span class="string">"g"</span>), <span class="string">"\\\x241"</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/**</span></div><div class="line">* 删除url字符串中指定的 query</div><div class="line">* @author:meizz</div><div class="line">* @version:2010/12/16</div><div class="line">* @param               &#123;string&#125;        url     url字符串</div><div class="line">* @param               &#123;string&#125;        key     被删除的query名</div><div class="line">* @return              &#123;string&#125;                被删除指定 query 后的url字符串</div><div class="line">*/</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">delurlquery</span>(<span class="params">url, key</span>) </span>&#123;</div><div class="line">    key = escapereg(key);</div><div class="line">    <span class="keyword">var</span> reg = <span class="keyword">new</span> regexp(<span class="string">"((\\?)("</span>+ key +<span class="string">"=[^&amp;]*&amp;)+(?!"</span>+ key +</div><div class="line">  <span class="string">"=))|(((\\?|&amp;)"</span>+ key +<span class="string">"=[^&amp;]*)+$)|(&amp;"</span>+ key +<span class="string">"=[^&amp;]*)"</span>, <span class="string">"g"</span>);</div><div class="line">    <span class="keyword">return</span> url.replace(reg, <span class="string">"\x241"</span>)</div><div class="line">&#125;</div><div class="line"><span class="comment">// 应用实例</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"http://www.xxx.com/?pn=0"</span>;   <span class="comment">// 删除指定字符 pn=0</span></div><div class="line">delurlquery(str, <span class="string">"pn"</span>);</div></pre></td></tr></table></figure>
+<p>这段代码相对于层次4《入微》有什么区别吗？从代码实现上来说没有太大的区别，但是从思路上来说却有着本质的区别：1、不再是就事论事，头疼医头，而是把一类问题抽象理论化，一招破万招；2、有封装的概念，不再是每次从零开始，而是站在半山腰开始爬。</p>
+<p>在web前端研发队伍里也有很大一部分人《入室》层次时就自我感觉良好，直接跨跃到《化蝶》，积累自己的代码库，抽象化问题。但没有基础，缺少强大  的后劲，即使能够破茧也经受不了风吹雨打。一份不成熟的架构设计对团队开发带来的危害远大于它带来的好处，这种例子在业界屡见不鲜。不要拔苗助长，不要不  会走就想着跑，夯实基础，水到渠成地成长，厚积薄发，强力地破茧而出。</p>
+<h3 id="进阶之路-4"><a href="#进阶之路-4" class="headerlink" title="进阶之路"></a>进阶之路</h3><p>你已经从原始积累，到厚积薄发，到破茧而出之后，你所关注的应该不再是一招一式、一个项目、一个模块，而应该是一种思路，一种理论。你可以做以下几  个步骤以突破到更高层次：再仔细看几遍html/css/javascript接口帮助文档；选择一门强语言（c++/c#/java等）观察理解这些语  言的组织结构，语言设计；看看原型链，链式语法编程，泛型，接口编程，dom遥控器等等；仔细阅读成熟的web前端开发框架的设计文档，看他们为什么要这  样设计。</p>
+<h2 id="六、大侠"><a href="#六、大侠" class="headerlink" title="六、大侠"></a>六、大侠</h2><p>这里所说的大侠，不是大家互相吹捧的”大侠”，而是实至名归的高手。这个级别的人完全有能力写出不差于bindows/jquery/ext/yui/dojo的同等级别规模的前端开发框架。应用成熟的开发框架指导、解决问题。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 库文件 /mz/string/escapereg.js</span></div><div class="line"><span class="comment">/**</span></div><div class="line">* 在拼接正则表达式字符串时，消除原字符串中特殊字符对正则表达式的干扰</div><div class="line">* @author:meizz</div><div class="line">* @version: 2010/12/16</div><div class="line">* @param               &#123;string&#125;        str     被正则表达式字符串保护编码的字符串</div><div class="line">* @return              &#123;string&#125;                被保护处理过后的字符串</div><div class="line">*/</div><div class="line">mz.string.escapereg = <span class="function"><span class="keyword">function</span> (<span class="params">str</span>) </span>&#123;</div><div class="line">        <span class="keyword">return</span> str.replace(<span class="keyword">new</span> regexp(<span class="string">"([.*+?^=!:\x24&#123;&#125;()|[\\]\/\\\\])"</span>, <span class="string">"g"</span>), <span class="string">"\\\x241"</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 库文件 /mz/url/delquery.js</span></div><div class="line"><span class="comment">/// include mz.string.escapereg;</span></div><div class="line"><span class="comment">/**</span></div><div class="line">* 删除url字符串中指定的 query</div><div class="line">* @author:meizz</div><div class="line">* @version:2010/12/16</div><div class="line">* @param               &#123;string&#125;        url     url字符串</div><div class="line">* @param               &#123;string&#125;        key     被删除的query名</div><div class="line">* @return              &#123;string&#125;                被删除指定 query 后的url字符串</div><div class="line">*/</div><div class="line">mz.url.delquery = <span class="function"><span class="keyword">function</span> (<span class="params">url, key</span>) </span>&#123;</div><div class="line">    key = mz.string.escapereg(key);</div><div class="line">    <span class="keyword">var</span> reg = <span class="keyword">new</span> regexp(<span class="string">"((\\?)("</span>+ key +<span class="string">"=[^&amp;]*&amp;)+(?!"</span>+ key +</div><div class="line">  <span class="string">"=))|(((\\?|&amp;)"</span>+ key +<span class="string">"=[^&amp;]*)+$)|(&amp;"</span>+ key +<span class="string">"=[^&amp;]*)"</span>, <span class="string">"g"</span>);</div><div class="line">    <span class="keyword">return</span> url.replace(reg, <span class="string">"\x241"</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 应用实例</span></div><div class="line"><span class="comment">/// include mz.url.delquery;</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"http://www.xxx.com/?pn=0"</span>;   <span class="comment">// 删除指定字符 pn=0</span></div><div class="line">mz.url.delquery(str, <span class="string">"pn"</span>);</div></pre></td></tr></table></figure>
+<p>自成体系，有基础，也有理论高度。知道为什么这样设计，也知道什么样的设计最好。比如这个例子可以有这样的封装：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 库文件 /mz/url/delquery.js</span></div><div class="line"><span class="comment">/// include mz.string.escapereg;</span></div><div class="line"><span class="comment">/**</span></div><div class="line">* 删除url字符串中指定的 query</div><div class="line">* @author:meizz</div><div class="line">* @version:2010/12/16</div><div class="line">* @param               &#123;string&#125;        url     url字符串</div><div class="line">* @param               &#123;string&#125;        key     被删除的query名</div><div class="line">* @return              &#123;string&#125;                被删除指定 query 后的url字符串</div><div class="line">*/</div><div class="line">string.prototype.delquery = <span class="function"><span class="keyword">function</span> (<span class="params"> key</span>) </span>&#123;</div><div class="line">    key = mz.string.escapereg(key);</div><div class="line">    <span class="keyword">var</span> reg = <span class="keyword">new</span> regexp(<span class="string">"((\\?)("</span>+ key +<span class="string">"=[^&amp;]*&amp;)+(?!"</span>+ key +</div><div class="line">  <span class="string">"=))|(((\\?|&amp;)"</span>+ key +<span class="string">"=[^&amp;]*)+$)|(&amp;"</span>+ key +<span class="string">"=[^&amp;]*)"</span>, <span class="string">"g"</span>);</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.replace(reg, <span class="string">"\x241"</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 应用实例</span></div><div class="line"><span class="comment">/// include mz.url.delquery;</span></div><div class="line"><span class="keyword">var</span> str = <span class="string">"http://www.xxx.com/?pn=0"</span>;   <span class="comment">// 删除指定字符 pn=0</span></div><div class="line">str.delquery(<span class="string">"pn"</span>);</div></pre></td></tr></table></figure>
+<p>而为什么不采用下面的那种封装呢？经过了《知微》和《化蝶》你就懂了。</p>
+<h3 id="进阶之路-5"><a href="#进阶之路-5" class="headerlink" title="进阶之路"></a>进阶之路</h3><p>道法自然，从根上去寻找突破的契机。你可以研读html解析引擎设计与实现，js解析引擎设计与实现，其它语言的代码解析与编译实现等等。</p>
+<p>或者出些书。低级别的人写的书要么是一大抄，空无一物；要么是害人。</p>
+<h2 id="七、宗师"><a href="#七、宗师" class="headerlink" title="七、宗师"></a>七、宗师</h2><p>这个级别的人已然到了无招胜有招的境界。项目开发中的难题？没有难题！运行平台的差异？从根本上搞定！代码规范、开发模式，早已经被抛在身后。这个级别的人已经不再关注于某个前端开发框架，而是应对具体的环境给出最佳的理论指导。</p>
+<p>这个级别的人所注意的应该是以最合理的系统架构引领着整个团队的进步，在什么样的场景下该用什么样的架构设计。3个、10个、50个、100个人的团队最应该用哪种模式？等你到了宗师级别，你再来回答吧。</p>
+<h3 id="进阶之路-6"><a href="#进阶之路-6" class="headerlink" title="进阶之路"></a>进阶之路</h3><p>每一个宗师就是一个高山，就是一个领域里的神，但是你仅满足于在一群比你弱的群体展现你的强大吗？如果还你是止步原地，那总会有人乘着飞机、宇宙飞船从你的头领掠过，高处不胜寒！</p>
+<p>要突破这片领域，那就必须跳出这片领域。要想突破web前端研发的宗师级，那就跳出web前端吧，上面还有web开发。即使你是web前端的宗师， 但没有快速的数据响应，没有高速的网络架构，没有优美的系统支持，你又能如何？所以突破之路就是把目光投到整条web开发的链条中去。</p>
+<h2 id="八、飞升"><a href="#八、飞升" class="headerlink" title="八、飞升"></a>八、飞升</h2><p>其实严格来说，飞升已经不是原领域的范围了。在web研发领域，对于这个层次的有一个很好听的称谓：架构师。当然那些”伪架构师”另当别论。</p>
+<p>一法通，万法通。在其它的技术领域，也可以按照《入门》《登堂》《入室》《入微》《化蝶》《大侠》《宗师》来划分等级；一样也可以按照我这里所写的每个级别的【进阶之路】来快速提升。</p>
+<p>祝贺你再获辉煌！</p>
+<blockquote>
+<p>看完这篇文章，只能说自己的进步空间还很大，前端路漫漫，一起加油！</p>
+<p>原文链接未找到。再次感谢原文作者！</p>
+</blockquote>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://xiaoxiaoqd.com//blog/ms-beginner/" data-id="cj03e2f71000dg0lnjmq0yqfp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="/blog/ms-beginner/" data-title="Web前端开发工程师编程能力飞升之路" data-url="http://xiaoxiaoqd.com//blog/ms-beginner/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/wangzc92/hexo-xiaoxiao-blog" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/blog/css-nth/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">前端解读：彻底理解css3结构伪类选择器</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/ms-beginner/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/面试宝典/">面试宝典</a></p>
+                            <p class="item-title"><a href="/blog/ms-beginner/" class="title">Web前端开发工程师编程能力飞升之路</a></p>
+                            <p class="item-date"><time datetime="2017-03-10T05:32:00.000Z" itemprop="datePublished">2017-03-10</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/css-nth/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://ofi3qxlvd.bkt.clouddn.com/image/point/first-child.jpg)" alt="前端解读：彻底理解css3结构伪类选择器" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端基础/">前端基础</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端基础/CSS/">CSS</a></p>
+                            <p class="item-title"><a href="/blog/css-nth/" class="title">前端解读：彻底理解css3结构伪类选择器</a></p>
+                            <p class="item-date"><time datetime="2017-03-09T05:29:00.000Z" itemprop="datePublished">2017-03-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/js-console/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://ofi3qxlvd.bkt.clouddn.com/images/point/console0.jpg)" alt="涨姿势：你真的会用console调试代码吗？" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端基础/">前端基础</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端基础/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/blog/js-console/" class="title">涨姿势：你真的会用console调试代码吗？</a></p>
+                            <p class="item-date"><time datetime="2017-03-08T05:22:00.000Z" itemprop="datePublished">2017-03-08</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端基础/">前端基础</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端基础/CSS/">CSS</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端基础/Javascript/">Javascript</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/面试宝典/">面试宝典</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/console/" style="font-size: 10px;">console</a> <a href="/tags/css3/" style="font-size: 10px;">css3</a> <a href="/tags/js/" style="font-size: 10px;">js</a> <a href="/tags/前端工程师/" style="font-size: 10px;">前端工程师</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 Xiaoxiao</p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'xiaoxiaoqdq'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+<script src="/js/canvas-nest.js"></script>
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('wgMgyy4Xmh0Xzn9RHzLc8Lh6-gzGzoHsz', 'UCwwLMKJV5AUDFBu5yY0wS3o');
+    </script>
+    <script>
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+    </div>
+</body>
+</html>

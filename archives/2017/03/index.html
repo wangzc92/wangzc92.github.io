@@ -3,19 +3,15 @@
 <head>
     <meta charset="utf-8">
     
-    <title>about | 笑笑前端圈</title>
+    <title>归档: 2017/3 | 笑笑前端圈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="about us">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://xiaoxiaoqd.com/about/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="笑笑前端圈">
+<meta property="og:url" content="http://xiaoxiaoqd.com/archives/2017/03/index.html">
 <meta property="og:site_name" content="笑笑前端圈">
-<meta property="og:description" content="about us">
-<meta property="og:updated_time" content="2017-03-10T05:26:46.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="about us">
+<meta name="twitter:title" content="笑笑前端圈">
     
 
     
@@ -124,142 +120,176 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/about/index.html">about</em>
+    <i class="icon fa fa-archive"></i>归档: 2017/3
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="page-undefined" class="article article-single article-type-page" itemscope itemprop="blogPost">
-    <div class="article-inner">
+                            
+
+    
+    
         
-            <header class="article-header">
-                
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/blog/ms-beginner/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="ds-thread-count" data-thread-key="/blog/ms-beginner/">0</span>
+    
+</span>
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <p class="category">
+            <a class="article-category-link" href="/categories/面试宝典/">面试宝典</a>
+            </p>
+            <p class="date"><time datetime="2017-03-10T05:32:00.000Z" itemprop="datePublished">2017-03-10</time></p>
+        </div>
+        
     
         <h1 class="article-title" itemprop="name">
-        about
+        <a href="/blog/ms-beginner/">Web前端开发工程师编程能力飞升之路</a>
         </h1>
     
 
-            </header>
-        
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-            <p>about us</p>
-
-        </div>
-        <footer class="article-footer">
+        <p class="article-excerpt">
             
+最近在网上看到这篇“Web前端开发工程师编程能力飞升之路”的文章，受益颇深，故转载到博客中，勉励自己。作者把前端技术按照《入门》《登堂》《入室》《入微》《化蝶》《大侠》《宗师》来划分等级，每个级别都提供了进阶之路，帮助在该等级迷茫的人们早日突破自己，更上一层楼。
 
-
-
-    <a data-url="http://xiaoxiaoqd.com/about/index.html" data-id="cj03e2f6o000cg0lnd3i5j1k1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-        </footer>
+背景如果你是刚进入web前端研发领域，想试试这潭水有多深，看这篇文章吧；
+如果你是做了两三年web产品前端研发，迷茫找不着提高之路，
+        </p>
     </div>
 </article>
+    
 
-    <section id="comments">
+    
+    
+    
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/blog/css-nth/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://ofi3qxlvd.bkt.clouddn.com/image/point/first-child.jpg)" alt="前端解读：彻底理解css3结构伪类选择器" class="thumbnail-image"></span>
+    
     
         
-    <div class="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://xiaoxiaoqd.com/about/index.html"></div>
-    <style>
-        #ds-thread #ds-reset .ds-textarea-wrapper {
-            background: none;
-        }
-        #ds-reset .ds-avatar img {
-            box-shadow: none;
-        }
-        #ds-reset .ds-gradient-bg {
-            background: #f7f7f7;
-        }
-        #ds-thread #ds-reset li.ds-tab a {
-            border-radius: 3px;
-        }
-        #ds-thread #ds-reset .ds-post-button {
-            color: white;
-            border: none;
-            box-shadow: none;
-            background: #d32;
-            text-shadow: none;
-            font-weight: normal;
-            font-family: 'Microsoft Yahei';
-        }
-        #ds-thread #ds-reset .ds-post-button:hover {
-            color: white;
-            background: #DE594C;
-        }
-        #ds-thread #ds-reset .ds-post-button:active {
-            background: #d32;
-        }
-        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
-            color: white;
-            background: #d32;
-            box-shadow: none;
-            text-shadow: none;
-            font-weight: normal;
-        }
-    </style>
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="ds-thread-count" data-thread-key="/blog/css-nth/">0</span>
+    
+</span>
 
     
-    </section>
+</a>
+
+        
+        <div class="article-meta">
+            <p class="category">
+            <a class="article-category-link" href="/categories/前端基础/">前端基础</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端基础/CSS/">CSS</a>
+            </p>
+            <p class="date"><time datetime="2017-03-09T05:29:00.000Z" itemprop="datePublished">2017-03-09</time></p>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/blog/css-nth/">前端解读：彻底理解css3结构伪类选择器</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+css3提供了一整套完备的新选择器。就样式化而言，它允许你匹配更多指定的元素。当你想匹配“列表的最后一项”，或者“总是包含某个东西的第一个段落”，这时你就可以废除那些无意义的id和class了。css选择器有很多，比如属性选择器、后代选择器、否定式选择器、目标伪类选择器、结构伪类选择器等等。今天主要为大家详细讲解css中的结构伪类选择器。
+
+先上全家福:
+
+:first-child选择与某个元素
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+    
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/blog/js-console/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://ofi3qxlvd.bkt.clouddn.com/images/point/console0.jpg)" alt="涨姿势：你真的会用console调试代码吗？" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="ds-thread-count" data-thread-key="/blog/js-console/">0</span>
+    
+</span>
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <p class="category">
+            <a class="article-category-link" href="/categories/前端基础/">前端基础</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端基础/Javascript/">Javascript</a>
+            </p>
+            <p class="date"><time datetime="2017-03-08T05:22:00.000Z" itemprop="datePublished">2017-03-08</time></p>
+        </div>
+        
+    
+        <h1 class="article-title" itemprop="name">
+        <a href="/blog/js-console/">涨姿势：你真的会用console调试代码吗？</a>
+        </h1>
+    
+
+        <p class="article-excerpt">
+            
+如果你是开发测试人员，一定对console不陌生。如果是初学者，恐怕只知道console.log()啦。对于整个的console家族，你又了解多少呢？我们使用console对js进行调试，但js原生中默认是没有console对象的，它是宿主对象，也就是浏览器提供的内置对象，所以浏览器不同，console对象也会有些许差异。使用console.log(console)打印出浏览器中的console
+        </p>
+    </div>
+</article>
+    
+        </div>
+    
+
+
+    </div></section>
+
 
 
                         </div>

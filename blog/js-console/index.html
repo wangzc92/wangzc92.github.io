@@ -3,19 +3,23 @@
 <head>
     <meta charset="utf-8">
     
-    <title>about | 笑笑前端圈</title>
+    <title>涨姿势：你真的会用console调试代码吗？ | 笑笑前端圈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="about us">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://xiaoxiaoqd.com/about/index.html">
+        <meta name="keywords" content="js,console" />
+    
+    <meta name="description" content="如果你是开发测试人员，一定对console不陌生。如果是初学者，恐怕只知道console.log()啦。对于整个的console家族，你又了解多少呢？我们使用console对js进行调试，但js原生中默认是没有console对象的，它是宿主对象，也就是浏览器提供的内置对象，所以浏览器不同，console对象也会有些许差异。使用console.log(console)打印出浏览器中的console">
+<meta property="og:type" content="article">
+<meta property="og:title" content="涨姿势：你真的会用console调试代码吗？">
+<meta property="og:url" content="http://xiaoxiaoqd.com/blog/js-console/index.html">
 <meta property="og:site_name" content="笑笑前端圈">
-<meta property="og:description" content="about us">
-<meta property="og:updated_time" content="2017-03-10T05:26:46.648Z">
+<meta property="og:description" content="如果你是开发测试人员，一定对console不陌生。如果是初学者，恐怕只知道console.log()啦。对于整个的console家族，你又了解多少呢？我们使用console对js进行调试，但js原生中默认是没有console对象的，它是宿主对象，也就是浏览器提供的内置对象，所以浏览器不同，console对象也会有些许差异。使用console.log(console)打印出浏览器中的console">
+<meta property="og:image" content="http://ofi3qxlvd.bkt.clouddn.com/images/point/console0.jpg">
+<meta property="og:updated_time" content="2017-03-10T05:38:00.658Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="about us">
+<meta name="twitter:title" content="涨姿势：你真的会用console调试代码吗？">
+<meta name="twitter:description" content="如果你是开发测试人员，一定对console不陌生。如果是初学者，恐怕只知道console.log()啦。对于整个的console家族，你又了解多少呢？我们使用console对js进行调试，但js原生中默认是没有console对象的，它是宿主对象，也就是浏览器提供的内置对象，所以浏览器不同，console对象也会有些许差异。使用console.log(console)打印出浏览器中的console">
+<meta name="twitter:image" content="http://ofi3qxlvd.bkt.clouddn.com/images/point/console0.jpg">
     
 
     
@@ -124,27 +128,68 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/about/index.html">about</em>
+    <a class="page-title-link" href="/categories/前端基础/">前端基础</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/前端基础/Javascript/">Javascript</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="page-undefined" class="article article-single article-type-page" itemscope itemprop="blogPost">
+                            <article id="post-js-console" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        about
+        涨姿势：你真的会用console调试代码吗？
         </h1>
     
 
             </header>
         
         
+            <div class="article-subtitle">
+                <a href="/blog/js-console/" class="article-date">
+    <time datetime="2017-03-08T05:22:00.000Z" itemprop="datePublished">2017-03-08</time>
+</a>
+                <span id="/blog/js-console/" class="leancloud-views_num" data-flag-title="涨姿势：你真的会用console调试代码吗？">
+     &nbsp;阅读量
+</span>
+
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/console/">console</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
+
+            </div>
+        
         
         <div class="article-entry" itemprop="articleBody">
-            <p>about us</p>
+            <blockquote>
+<p>如果你是开发测试人员，一定对console不陌生。如果是初学者，恐怕只知道console.log()啦。对于整个的console家族，你又了解多少呢？我们使用console对js进行调试，但js原生中默认是没有console对象的，它是宿主对象，也就是浏览器提供的内置对象，所以浏览器不同，console对象也会有些许差异。使用console.log(console)打印出浏览器中的console对象，看看你用过哪些？</p>
+</blockquote>
+<p>下面是chrome浏览器截图：</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console0.jpg" alt="console"></p>
+<p>仔细看一下，还真的不少呢。接下来介绍几个常用的console方法。</p>
+<h2 id="用来打印消息"><a href="#用来打印消息" class="headerlink" title="用来打印消息"></a>用来打印消息</h2><ul>
+<li>打印字符串：console.log()</li>
+<li>打印提示消息：console.info()</li>
+<li>打印警告消息：console.warn()</li>
+<li>打印错误消息：console.error()</li>
+<li>打印调试信息：console.debug()</li>
+</ul>
+<p>这几个方法都可以接受多个参数，逗号分隔。它会在每次输出结尾添加换行符。没有返回值就返回undefined。另外这五种方法都可以使用printf风格占位符，字符（%s）、整数（%d或%i）、浮点数（%f）和对象（%o）四种。如果第一个参数是格式字符串，方法会将依次用后面的参数替换占位符，然后再进行输出。五种方法示例如下：</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console1.jpg" alt="console.log"></p>
+<h2 id="统计次数console-count"><a href="#统计次数console-count" class="headerlink" title="统计次数console.count()"></a>统计次数console.count()</h2><p>有时候我们需要统计一个函数被调用了几次，一般都是加入一个变量然后输出。现在，我们可以直接使用console.count()来帮助我们统计并输出。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console2.jpg" alt="console.count"></p>
+<h2 id="判断真假console-assert"><a href="#判断真假console-assert" class="headerlink" title="判断真假console.assert()"></a>判断真假console.assert()</h2><p>我们写代码的时候总会碰到判断某个变量是否为真，这个时候可以console.assert()来判断，当表达式为false的时候，输出信息到控制台。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console3.jpg" alt="console.assert"></p>
+<h2 id="查看对象信息console-dir"><a href="#查看对象信息console-dir" class="headerlink" title="查看对象信息console.dir()"></a>查看对象信息console.dir()</h2><p>如果想要看详细的对象信息，我们可以使用 console.dir，将一个 JavaScript 对象的所有属性和属性值显示成一个可交互的列表，它还能打印出函数等。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console4.jpg" alt="console.dir"></p>
+<h2 id="打印成表格console-table"><a href="#打印成表格console-table" class="headerlink" title="打印成表格console.table()"></a>打印成表格console.table()</h2><p>可以将传入的对象或数组这些复合数据以表格的形式输出。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console5.jpg" alt="console.table"></p>
+<h2 id="输出信息分组console-group-和console-groupEnd"><a href="#输出信息分组console-group-和console-groupEnd" class="headerlink" title="输出信息分组console.group()和console.groupEnd()"></a>输出信息分组console.group()和console.groupEnd()</h2><p>如果输出信息比较多，可以进行分组管理。</p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/images/point/console6.jpg" alt="console.group"></p>
+<blockquote>
+<p>console方法还有很多，这里就不一一列举了，想了解更多请自行查阅官方API文档。掌握这些方法，对我们调试代码很有帮助。</p>
+<p>原文链接：<a href="http://www.wangzc.cc/points-console/" target="_blank" rel="external">http://www.wangzc.cc/points-console/</a></p>
+</blockquote>
 
         </div>
         <footer class="article-footer">
@@ -152,7 +197,7 @@
 
 
 
-    <a data-url="http://xiaoxiaoqd.com/about/index.html" data-id="cj03e2f6o000cg0lnd3i5j1k1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://xiaoxiaoqd.com//blog/js-console/" data-id="cj03e2f4e0000g0lnta1t2n1l" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -219,7 +264,7 @@
     <section id="comments">
     
         
-    <div class="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://xiaoxiaoqd.com/about/index.html"></div>
+    <div class="ds-thread" data-thread-key="/blog/js-console/" data-title="涨姿势：你真的会用console调试代码吗？" data-url="http://xiaoxiaoqd.com//blog/js-console/"></div>
     <style>
         #ds-thread #ds-reset .ds-textarea-wrapper {
             background: none;
@@ -320,6 +365,23 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/blog/css-nth/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            前端解读：彻底理解css3结构伪类选择器
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+</nav>
+
     
     <div class="widgets-container">
         

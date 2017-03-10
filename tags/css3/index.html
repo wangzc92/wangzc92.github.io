@@ -3,19 +3,15 @@
 <head>
     <meta charset="utf-8">
     
-    <title>about | 笑笑前端圈</title>
+    <title>标签：: css3 | 笑笑前端圈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="about us">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://xiaoxiaoqd.com/about/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="笑笑前端圈">
+<meta property="og:url" content="http://xiaoxiaoqd.com/tags/css3/index.html">
 <meta property="og:site_name" content="笑笑前端圈">
-<meta property="og:description" content="about us">
-<meta property="og:updated_time" content="2017-03-10T05:26:46.648Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="about us">
+<meta name="twitter:title" content="笑笑前端圈">
     
 
     
@@ -124,142 +120,77 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/about/index.html">about</em>
+    <i class="icon fa fa-tag"></i>标签：: <em>css3</em>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="page-undefined" class="article article-single article-type-page" itemscope itemprop="blogPost">
-    <div class="article-inner">
+                            
+
+    
+    
         
-            <header class="article-header">
-                
+        
+        <section class="archives-wrap">
+            <div class="archive-year-wrap">
+                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
+            </div>
+            <div class="archives">
+    
+    
+    
+        <div class="article-row">
+    
+        <article class="article article-summary">
+    <div class="article-summary-inner">
+        
+        <a href="/blog/css-nth/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://ofi3qxlvd.bkt.clouddn.com/image/point/first-child.jpg)" alt="前端解读：彻底理解css3结构伪类选择器" class="thumbnail-image"></span>
+    
+    
+        
+<span class="comment-counter">
+    <i class="fa fa-comments-o"></i>
+    
+        <span class="ds-thread-count" data-thread-key="/blog/css-nth/">0</span>
+    
+</span>
+
+    
+</a>
+
+        
+        <div class="article-meta">
+            <p class="category">
+            <a class="article-category-link" href="/categories/前端基础/">前端基础</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端基础/CSS/">CSS</a>
+            </p>
+            <p class="date"><time datetime="2017-03-09T05:29:00.000Z" itemprop="datePublished">2017-03-09</time></p>
+        </div>
+        
     
         <h1 class="article-title" itemprop="name">
-        about
+        <a href="/blog/css-nth/">前端解读：彻底理解css3结构伪类选择器</a>
         </h1>
     
 
-            </header>
-        
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-            <p>about us</p>
-
-        </div>
-        <footer class="article-footer">
+        <p class="article-excerpt">
             
+css3提供了一整套完备的新选择器。就样式化而言，它允许你匹配更多指定的元素。当你想匹配“列表的最后一项”，或者“总是包含某个东西的第一个段落”，这时你就可以废除那些无意义的id和class了。css选择器有很多，比如属性选择器、后代选择器、否定式选择器、目标伪类选择器、结构伪类选择器等等。今天主要为大家详细讲解css中的结构伪类选择器。
 
+先上全家福:
 
-
-    <a data-url="http://xiaoxiaoqd.com/about/index.html" data-id="cj03e2f6o000cg0lnd3i5j1k1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-        </footer>
+:first-child选择与某个元素
+        </p>
     </div>
 </article>
-
-    <section id="comments">
     
-        
-    <div class="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://xiaoxiaoqd.com/about/index.html"></div>
-    <style>
-        #ds-thread #ds-reset .ds-textarea-wrapper {
-            background: none;
-        }
-        #ds-reset .ds-avatar img {
-            box-shadow: none;
-        }
-        #ds-reset .ds-gradient-bg {
-            background: #f7f7f7;
-        }
-        #ds-thread #ds-reset li.ds-tab a {
-            border-radius: 3px;
-        }
-        #ds-thread #ds-reset .ds-post-button {
-            color: white;
-            border: none;
-            box-shadow: none;
-            background: #d32;
-            text-shadow: none;
-            font-weight: normal;
-            font-family: 'Microsoft Yahei';
-        }
-        #ds-thread #ds-reset .ds-post-button:hover {
-            color: white;
-            background: #DE594C;
-        }
-        #ds-thread #ds-reset .ds-post-button:active {
-            background: #d32;
-        }
-        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
-            color: white;
-            background: #d32;
-            box-shadow: none;
-            text-shadow: none;
-            font-weight: normal;
-        }
-    </style>
-
+        </div>
     
-    </section>
+
+
+    </div></section>
+
 
 
                         </div>

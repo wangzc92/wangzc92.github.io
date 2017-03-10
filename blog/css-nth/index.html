@@ -3,19 +3,35 @@
 <head>
     <meta charset="utf-8">
     
-    <title>about | 笑笑前端圈</title>
+    <title>前端解读：彻底理解css3结构伪类选择器 | 笑笑前端圈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="about us">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://xiaoxiaoqd.com/about/index.html">
+        <meta name="keywords" content="css3" />
+    
+    <meta name="description" content="css3提供了一整套完备的新选择器。就样式化而言，它允许你匹配更多指定的元素。当你想匹配“列表的最后一项”，或者“总是包含某个东西的第一个段落”，这时你就可以废除那些无意义的id和class了。css选择器有很多，比如属性选择器、后代选择器、否定式选择器、目标伪类选择器、结构伪类选择器等等。今天主要为大家详细讲解css中的结构伪类选择器。
+
+先上全家福:
+
+:first-child选择与某个元素">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端解读：彻底理解css3结构伪类选择器">
+<meta property="og:url" content="http://xiaoxiaoqd.com/blog/css-nth/index.html">
 <meta property="og:site_name" content="笑笑前端圈">
-<meta property="og:description" content="about us">
-<meta property="og:updated_time" content="2017-03-10T05:26:46.648Z">
+<meta property="og:description" content="css3提供了一整套完备的新选择器。就样式化而言，它允许你匹配更多指定的元素。当你想匹配“列表的最后一项”，或者“总是包含某个东西的第一个段落”，这时你就可以废除那些无意义的id和class了。css选择器有很多，比如属性选择器、后代选择器、否定式选择器、目标伪类选择器、结构伪类选择器等等。今天主要为大家详细讲解css中的结构伪类选择器。
+
+先上全家福:
+
+:first-child选择与某个元素">
+<meta property="og:image" content="http://ofi3qxlvd.bkt.clouddn.com/image/point/first-child.jpg">
+<meta property="og:updated_time" content="2017-03-10T05:37:32.686Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="about us">
+<meta name="twitter:title" content="前端解读：彻底理解css3结构伪类选择器">
+<meta name="twitter:description" content="css3提供了一整套完备的新选择器。就样式化而言，它允许你匹配更多指定的元素。当你想匹配“列表的最后一项”，或者“总是包含某个东西的第一个段落”，这时你就可以废除那些无意义的id和class了。css选择器有很多，比如属性选择器、后代选择器、否定式选择器、目标伪类选择器、结构伪类选择器等等。今天主要为大家详细讲解css中的结构伪类选择器。
+
+先上全家福:
+
+:first-child选择与某个元素">
+<meta name="twitter:image" content="http://ofi3qxlvd.bkt.clouddn.com/image/point/first-child.jpg">
     
 
     
@@ -124,27 +140,70 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="/about/index.html">about</em>
+    <a class="page-title-link" href="/categories/前端基础/">前端基础</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/前端基础/CSS/">CSS</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="page-undefined" class="article article-single article-type-page" itemscope itemprop="blogPost">
+                            <article id="post-css-nth" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        about
+        前端解读：彻底理解css3结构伪类选择器
         </h1>
     
 
             </header>
         
         
+            <div class="article-subtitle">
+                <a href="/blog/css-nth/" class="article-date">
+    <time datetime="2017-03-09T05:29:00.000Z" itemprop="datePublished">2017-03-09</time>
+</a>
+                <span id="/blog/css-nth/" class="leancloud-views_num" data-flag-title="前端解读：彻底理解css3结构伪类选择器">
+     &nbsp;阅读量
+</span>
+
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css3/">css3</a></li></ul>
+
+            </div>
+        
         
         <div class="article-entry" itemprop="articleBody">
-            <p>about us</p>
+            <blockquote>
+<p>css3提供了一整套完备的新选择器。就样式化而言，它允许你匹配更多指定的元素。当你想匹配“列表的最后一项”，或者“总是包含某个东西的第一个段落”，这时你就可以废除那些无意义的id和class了。css选择器有很多，比如属性选择器、后代选择器、否定式选择器、目标伪类选择器、结构伪类选择器等等。今天主要为大家详细讲解css中的结构伪类选择器。</p>
+</blockquote>
+<p>先上全家福:</p>
+<ul>
+<li>:first-child选择与某个元素同级的第一个元素，且是该元素类型；</li>
+<li>:last-child选择与某个元素同级的最后一个元素，且是该元素类型；</li>
+<li>:nth-child()选择与某个元素同级的一个或多个元素，且是该元素类型；</li>
+<li>:nth-last-child()选择与某个元素同级的一个或多个特定的元素，从这个元素的最后一个同级元素开始算；</li>
+<li>:only-child选择的元素是它的父元素的唯一一个子元素；</li>
+<li>:nth-of-type()选择指定的元素；</li>
+<li>:nth-last-of-type()选择指定的元素，从元素的最后一个开始计算；</li>
+<li>:first-of-type选择父级元素的第一个同类子元素；</li>
+<li>:last-of-type选择父级元素的最后一个同类子元素；</li>
+<li>:only-of-type选择一个元素是它的父级元素的唯一一个相同类型的子元素；</li>
+</ul>
+<p>是不是快被我绕晕了，好吧，下面对每个进行解析，用图片说话。</p>
+<h2 id="first-child"><a href="#first-child" class="headerlink" title=":first-child"></a>:first-child</h2><p>:first-child是用来选择与某个元素同级的第一个元素，且是该元素类型，比如这里有个列表，想让列表中的”1”具有不同的样式，我们就可以使用:first-child来实现：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span>&#123;<span class="attribute">background</span>:yellow;&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/image/point/first-child.jpg" alt="first-child"></p>
+<h2 id="last-child"><a href="#last-child" class="headerlink" title=":last-child"></a>:last-child</h2><p>:last-child选择与某个元素同级的最后一个元素，且是该元素类型，与:first-child相对，选择最后一个元素。这里也要同样注意那个问题。例如：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:last-child</span>&#123;<span class="attribute">background</span>:yellow;&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/image/point/last-child.jpg" alt="last-child"></p>
+<h2 id="nth-child"><a href="#nth-child" class="headerlink" title=":nth-child()"></a>:nth-child()</h2><p>这是今天的重点，也是最实用的，好好理解一下。:nth-child()选择与某个元素同级的一个或多个元素，且是该元素类型。参数值是an+b，n是计数器，从0开始。a是倍数，b是偏移量。主要有下面几种形式：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">:nth-child(num); /*选择第num个元素*/</div><div class="line">:nth-child(n);/*参数是n,n从0开始计算*/</div><div class="line">:nth-child(n*num)/*n的倍数选择，n从0开始算*/</div><div class="line">:nth-child(n+num);/*选择大于num后面的元素*/</div><div class="line">:nth-child(-n+num)/*选择小于num前面的元素*/</div><div class="line">:nth-child(n*num+1);/*表示隔几选一*/</div><div class="line">//上面num为整数</div></pre></td></tr></table></figure></p>
+<p><img src="http://ofi3qxlvd.bkt.clouddn.com/image/point/nth-child.jpg" alt="nth-child"></p>
+<h2 id="nth-last-child"><a href="#nth-last-child" class="headerlink" title=":nth-last-child()"></a>:nth-last-child()</h2><p>:nth-last-child()与:nth-child()用法一样，唯一的区别就是一个从前面数，一个从后面数。这里就不赘述了。</p>
+<h2 id="only-child"><a href="#only-child" class="headerlink" title=":only-child"></a>:only-child</h2><p>:only-child选择的元素是它的父元素的唯一一个子元素;也就是该元素不能有其他的同级元素。与:only-of-type的区别是，：only-of-type选择的元素可以存在同级元素，但该元素类型只能存在一个。</p>
+<h2 id="nth-of-type-，-nth-last-of-type-，-first-of-type，-last-of-type和-only-of-type"><a href="#nth-of-type-，-nth-last-of-type-，-first-of-type，-last-of-type和-only-of-type" class="headerlink" title=":nth-of-type()，:nth-last-of-type()，:first-of-type，:last-of-type和:only-of-type"></a>:nth-of-type()，:nth-last-of-type()，:first-of-type，:last-of-type和:only-of-type</h2><p>我之所以这样写是我不想再重复讲述，如果分类的话，前五个可分为一组（简称为child组），后五个分为一组（简称为type组），用法一对一都是一样的，只是有一个重要的不同点。</p>
+<p>child组计数时的第几个都是从该元素的第一个同级元素开始，如果第几个与该元素类型一样则生效。而type组计数时的第几个都是从与该元素类型一样的同级元素的第一个开始，不受其他同级元素的干扰。这是重中之重，好好理解一下，可以写几个例子感受一下。</p>
+<blockquote>
+<p>结构伪类选择器不兼容IE8及更早版本，所以对浏览器兼容性比较强的小伙伴们还是不要选择这些方法，老老实实定义id或class吧。如果要求不高，这些方法在选取标签添加样式上还是很给力的，快去尝试一下吧。</p>
+<p>竹风原创，欢迎交流学习。转载请附上本文链接，谢谢！</p>
+</blockquote>
 
         </div>
         <footer class="article-footer">
@@ -152,7 +211,7 @@
 
 
 
-    <a data-url="http://xiaoxiaoqd.com/about/index.html" data-id="cj03e2f6o000cg0lnd3i5j1k1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://xiaoxiaoqd.com//blog/css-nth/" data-id="cj03e2f4r0001g0lnfipolh16" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -219,7 +278,7 @@
     <section id="comments">
     
         
-    <div class="ds-thread" data-thread-key="about/index.html" data-title="about" data-url="http://xiaoxiaoqd.com/about/index.html"></div>
+    <div class="ds-thread" data-thread-key="/blog/css-nth/" data-title="前端解读：彻底理解css3结构伪类选择器" data-url="http://xiaoxiaoqd.com//blog/css-nth/"></div>
     <style>
         #ds-thread #ds-reset .ds-textarea-wrapper {
             background: none;
@@ -320,6 +379,29 @@
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/blog/ms-beginner/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            Web前端开发工程师编程能力飞升之路
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/blog/js-console/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">涨姿势：你真的会用console调试代码吗？</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         

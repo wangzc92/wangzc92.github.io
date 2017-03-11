@@ -350,6 +350,7 @@ code {
 #header-outer {
   height: 100%;
   position: relative;
+  z-index: 20;
 }
 #header-inner {
   position: relative;
@@ -910,8 +911,23 @@ code {
 .archive-list-count:after {
   content: ")";
 }
+.tagcloud {
+  position: relative;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
 .tagcloud a {
-  margin-right: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-decoration: none;
+  margin: 0 10px 15px 0;
+  line-height: 18px;
+  text-align: center;
+  padding: 1px 5px;
+  display: inline-block;
+  border-radius: 2px;
 }
 .article-single {
   padding: 30px 30px 20px;

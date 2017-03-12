@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>详解 CSS 居中布局技巧 | 笑笑前端圈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="css" />
+    
+    <meta name="description" content="水平居中元素：
+通用方法，元素的宽高未知方式一：CSS3 transform 
+
+12345678.parent&amp;#123;	position:absolute;&amp;#125;.child&amp;#123;	position:absolute;	left:50%;	transform:translate(-50%);&amp;#125;
+方式二：Flex 布局
+1234.parent&amp;#123;	display">
+<meta property="og:type" content="article">
+<meta property="og:title" content="详解 CSS 居中布局技巧">
+<meta property="og:url" content="http://xiaoxiaoqdq.com/blog/cs-layout-center/index.html">
+<meta property="og:site_name" content="笑笑前端圈">
+<meta property="og:description" content="水平居中元素：
+通用方法，元素的宽高未知方式一：CSS3 transform 
+
+12345678.parent&amp;#123;	position:absolute;&amp;#125;.child&amp;#123;	position:absolute;	left:50%;	transform:translate(-50%);&amp;#125;
+方式二：Flex 布局
+1234.parent&amp;#123;	display">
+<meta property="og:image" content="http://ofi3qxlvd.bkt.clouddn.com/css3.jpg">
+<meta property="og:updated_time" content="2017-03-12T11:00:35.586Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="详解 CSS 居中布局技巧">
+<meta name="twitter:description" content="水平居中元素：
+通用方法，元素的宽高未知方式一：CSS3 transform 
+
+12345678.parent&amp;#123;	position:absolute;&amp;#125;.child&amp;#123;	position:absolute;	left:50%;	transform:translate(-50%);&amp;#125;
+方式二：Flex 布局
+1234.parent&amp;#123;	display">
+<meta name="twitter:image" content="http://ofi3qxlvd.bkt.clouddn.com/css3.jpg">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/">前端笔记</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/CSS/">CSS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/Javascript/">Javascript</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/Service/">Service</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/面试宝典/">面试宝典</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/前端笔记/CSS/">CSS</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-cs-layout-center" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        详解 CSS 居中布局技巧
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-subtitle">
+                
+	<i class="icon fa fa-user"></i>
+    <span class="article-author">Xiaoxiao</span>
+
+                <i class="icon fa fa-clock-o"></i>
+<a href="/blog/cs-layout-center/" class="article-date">
+    <time datetime="2017-03-12T10:20:00.000Z" itemprop="datePublished">2017-03-12</time>
+</a>
+                <i class="icon fa fa-eye"></i>
+<span id="/blog/cs-layout-center/" class="leancloud-views_num" data-flag-title="详解 CSS 居中布局技巧"></span>
+
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="http://ofi3qxlvd.bkt.clouddn.com/css3.jpg" alt="css"></p>
+<h2 id="水平居中元素："><a href="#水平居中元素：" class="headerlink" title="水平居中元素："></a>水平居中元素：</h2><ul>
+<li>通用方法，元素的宽高未知<br>方式一：CSS3 transform </li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">left</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">transform</span>:<span class="built_in">translate</span>(-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>方式二：Flex 布局</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">display</span>:flex;</div><div class="line">	<span class="attribute">justify-content</span>:center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>适用于子元素为浮动，绝对定位，内联元素，均可水平居中。</p>
+<ul>
+<li>居中的元素为常规文档流中的内联元素(display: inline)</li>
+</ul>
+<p>常见的内联元素有：span, a, img, input, label 等等</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>此方法同样适用于 display: inline-block 的元素。</p>
+<ul>
+<li>居中的元素为常规文档流中的块元素(display: block)</li>
+</ul>
+<p>常见的块元素：div, h1~h6, table, p, ul, li 等等</p>
+<p>方式一：设置 margin</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100%</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">600px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">50px</span>;</div><div class="line">	<span class="attribute">margin</span>:<span class="number">0</span> auto;</div><div class="line">	<span class="attribute">background</span>:<span class="number">#999</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>此方法只能进行水平的居中，且对浮动元素或绝对定位元素无效。</p>
+<p>方式二：修改为 inline-block 属性</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">display</span>:inline-block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>居中的元素为浮动元素</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">float</span>:left;</div><div class="line">	<span class="attribute">position</span>:relative;</div><div class="line">	<span class="attribute">left</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">margin-left</span>:-<span class="number">50px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>居中的元素为绝对定位元素</li>
+</ul>
+<p>方式一：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">position</span>:relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">left</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">margin-left</span>:-<span class="number">50px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>方式二：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">position</span>:relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">left</span>:<span class="number">0</span>;</div><div class="line">	<span class="attribute">right</span>:<span class="number">0</span>;</div><div class="line">	<span class="attribute">margin</span>:<span class="number">0</span> auto;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="垂直居中元素："><a href="#垂直居中元素：" class="headerlink" title="垂直居中元素："></a>垂直居中元素：</h2><ul>
+<li>通用方法，元素的宽高未知</li>
+</ul>
+<p>方式一：CSS3 transform</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">position</span>:relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">transform</span>:<span class="built_in">translateY</span>(-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>方式二：Flex 布局</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">display</span>:flex;</div><div class="line">	<span class="attribute">align-item</span>:center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>适用于子元素为浮动，绝对定位，内联元素，均可垂直居中。</p>
+<ul>
+<li>居中元素为单行文本</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.text</span>&#123;</div><div class="line">	<span class="attribute">line-height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>把文字的 line-height 设为文字父容器的高度，适用于只有一行文字的情况。</p>
+<ul>
+<li>已知元素宽高</li>
+</ul>
+<p>方式一：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">position</span>:relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">margin-top</span>:-<span class="number">50px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>方式二：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">position</span>:relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">0</span>;</div><div class="line">	<span class="attribute">bottom</span>:<span class="number">0</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">margin-top</span>:auto <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="垂直居中元素：-1"><a href="#垂直居中元素：-1" class="headerlink" title="垂直居中元素："></a>垂直居中元素：</h2><ul>
+<li><ol>
+<li>绝对居中定位</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">div&#123;</div><div class="line">	width:100px;</div><div class="line">	height:100px;</div><div class="line">	margin:auto;</div><div class="line">	position: fixed;  //absolute is ok</div><div class="line">	top:0;</div><div class="line">	right:0;</div><div class="line">	bottom:0;</div><div class="line">	left:0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>优点：</p>
+<ol>
+<li>不仅可以实现在正中间，还可以在正左方，正右方</li>
+<li>元素的宽高支持百分比 % 属性值和 min-/max- 属性</li>
+<li>可以封装为一个公共类，可做弹出层</li>
+<li>浏览器支持性好</li>
+</ol>
+<ul>
+<li><ol>
+<li>负边距居中</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">right</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">margin-left</span>:-<span class="number">50px</span>;</div><div class="line">	<span class="attribute">margin-top</span>:-<span class="number">50px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>特点：</p>
+<ol>
+<li>良好的跨浏览器特性,兼容 IE6 - IE7</li>
+<li>灵活性差，不能自适应，宽高不支持百分比尺寸和 min-/max- 属性</li>
+</ol>
+<ul>
+<li><ol>
+<li>Transform 定位</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">right</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">transform</span>:<span class="built_in">translate</span>(-50%,-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>特点：</p>
+<ol>
+<li>内容可自适应，可以封装为一个公共类，可做弹出层</li>
+<li>可能干扰其他 transform 效果</li>
+</ol>
+<ul>
+<li><ol>
+<li>Flexbox 布局</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">display</span>:flex;</div><div class="line">	<span class="attribute">justify-content</span>:center;</div><div class="line">	<span class="attribute">align-item</span>:center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这是 CSS 布局未来的趋势。Flexbox 是 CSS3 新增属性，设计初衷是为了解决像垂直居中这样的常见布局问题。</p>
+<ul>
+<li><ol>
+<li>table-cell 居中</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">display</span>:table-cell;</div><div class="line">	<span class="attribute">vertical-align</span>: middle;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">	<span class="attribute">width</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">border</span>:<span class="number">1px</span> solid red;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</div><div class="line">	<span class="attribute">display</span>: inline-block;</div><div class="line">	<span class="attribute">background-color</span>:<span class="number">#03f</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>适用于子元素 display 为 inline-block, inline 类型的元素，需要已知父元素的宽高，且父元素的宽高不能设为百分比数。</p>
+<ul>
+<li><ol>
+<li>font-size 配合 vertical-align 实现垂直居中</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">font-size</span>:<span class="number">175.4px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">vertical-align</span>:middle;</div><div class="line">	<span class="attribute">display</span>:inline-block;</div><div class="line">	<span class="attribute">font-size</span>:<span class="number">12px</span>;</div><div class="line">	<span class="attribute">width</span>: <span class="number">50px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">	<span class="attribute">background-color</span>:<span class="number">#00f</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>该方法的要点是给父元素设一个合适的 font-size 的值，这个值的取值为该父元素的高度除以 1.14 得到的值，并且子元素必须 是一个 inline 或 inline-block 元素，需要加上 <code>vertical-align: middle</code> 属性。使用这种方法，子元素的宽度或高度都不必知道。</p>
+<p>具体原理可以上网搜 vertical-align 垂直居中。</p>
+<ul>
+<li><ol>
+<li>文本内容居中</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">text</span>&#123;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">line-height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        </div>
+        <footer class="article-footer">
+            
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div class="ds-thread" data-thread-key="/blog/cs-layout-center/" data-title="详解 CSS 居中布局技巧" data-url="http://xiaoxiaoqdq.com//blog/cs-layout-center/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/XiaoxiaoGroup" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="http://weibo.com/u/6171082045" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/blog/se-http-cdn/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">掌握 HTTP 缓存——从请求到响应过程的一切</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/cs-layout-center/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://ofi3qxlvd.bkt.clouddn.com/css3.jpg)" alt="详解 CSS 居中布局技巧" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/CSS/">CSS</a></p>
+                            <p class="item-title"><a href="/blog/cs-layout-center/" class="title">详解 CSS 居中布局技巧</a></p>
+                            <p class="item-date"><time datetime="2017-03-12T10:20:00.000Z" itemprop="datePublished">2017-03-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/se-http-cdn/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://huzidaha.github.io/images-store/201702/9-1.png)" alt="掌握 HTTP 缓存——从请求到响应过程的一切" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/Service/">Service</a></p>
+                            <p class="item-title"><a href="/blog/se-http-cdn/" class="title">掌握 HTTP 缓存——从请求到响应过程的一切</a></p>
+                            <p class="item-date"><time datetime="2017-03-11T15:32:00.000Z" itemprop="datePublished">2017-03-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/cs-flexbox-works-2/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://huzidaha.github.io/images-store/201702/5-1PghNPeo_XAXroKXksXGfCQ.png)" alt="通过动图形象地为你介绍 Flexbox 是如何工作的（二）" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/CSS/">CSS</a></p>
+                            <p class="item-title"><a href="/blog/cs-flexbox-works-2/" class="title">通过动图形象地为你介绍 Flexbox 是如何工作的（二）</a></p>
+                            <p class="item-date"><time datetime="2017-03-11T15:18:00.000Z" itemprop="datePublished">2017-03-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/cs-flexbox-works-1/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://huzidaha.github.io/images-store/201702/3-1.png)" alt="通过动图形象地为你介绍Flexbox是如何工作的（一）" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/CSS/">CSS</a></p>
+                            <p class="item-title"><a href="/blog/cs-flexbox-works-1/" class="title">通过动图形象地为你介绍Flexbox是如何工作的（一）</a></p>
+                            <p class="item-date"><time datetime="2017-03-11T15:02:00.000Z" itemprop="datePublished">2017-03-11</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/js-without-loops/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://huzidaha.github.io/images-store/201702/6-1javascript-without-loops.png)" alt="无循环 JavaScript" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/Javascript/">Javascript</a></p>
+                            <p class="item-title"><a href="/blog/js-without-loops/" class="title">无循环 JavaScript</a></p>
+                            <p class="item-date"><time datetime="2017-03-11T14:52:00.000Z" itemprop="datePublished">2017-03-11</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                <div class="widget-wrap widget-list">
+    <h3 class="widget-title">微信公众号</h3>
+    <div class="widget">
+        <img src="/css/images/wechat.jpg" attr="wechat">
+    </div>
+</div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/">前端笔记</a><span class="category-list-count">5</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/CSS/">CSS</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/Javascript/">Javascript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/Service/">Service</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/面试宝典/">面试宝典</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a><span class="archive-list-count">6</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud" id="tagcloud">
+            <a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/flexbox/" style="font-size: 15px;">flexbox</a> <a href="/tags/前端工程师/" style="font-size: 10px;">前端工程师</a>
+        </div>
+    </div>
+
+ 
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://www.w3cfuns.com/" target="_blank">前端网</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.yyyweb.com" target="_blank">前端里</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.reqianduan.com" target="_blank">热前端</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.html-js.com" target="_blank">前端乱炖</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.webhek.com" target="_blank">WEB骇客</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://segmentfault.com/" target="_blank">segmentfault</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 Xiaoxiao</p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'xiaoxiaoqdq'};
+    (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+<script src="/js/canvas-nest.js"></script>
+<script src="/js/tagcloud.js"></script>
+
+
+    <!-- Leancloud -->
+    <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+    <script>
+        AV.initialize('lzP5SSg5UrDRDaM2mX9wUC9c-gzGzoHsz', '7ADl4tgwxomPeaxmUx3HAO1c');
+    </script>
+    <script>
+    function showTime(Counter) {
+        var query = new AV.Query(Counter);
+        $('.leancloud-views_num').each(function() {
+            var url = $(this).attr('id').trim();
+            query.equalTo('url', url);
+            query.find({
+                success: function(results) {
+                    if (results.length === 0) {
+                        var content = '0 ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                        return;
+                    }
+                    for (var i = 0; i < results.length; i++) {
+                        var object = results[i];
+                        var content = object.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    }
+                },
+                error: function(object, error) {
+                    console.log('Error: ' + error.code + ' ' + error.message);
+                }
+            });
+        });
+    }
+
+    function addCount(Counter) {
+      var Counter = AV.Object.extend('Counter');
+      url = $('.leancloud-views_num').attr('id').trim();
+      title = $('.leancloud-views_num').attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+      query.equalTo('url', url);
+      query.find({
+          success: function(results) {
+            if (results.length > 0) {
+                var counter = results[0];
+                counter.fetchWhenSave(true);
+                counter.increment('time');
+                counter.save(null, {
+                    success: function(counter) {
+                        var content =  counter.get('time') + ' ' + $(document.getElementById(url)).text();
+                        $(document.getElementById(url)).text(content);
+                    },
+                    error: function(counter, error) {
+                        console.log('Failed to save Visitor num, with error message: ' + error.message);
+                    }
+                });
+            } else {
+              var newcounter = new Counter();
+              newcounter.set('title', title);
+              newcounter.set('url', url);
+              newcounter.set('time', 1);
+              newcounter.save(null, {
+                  success: function(newcounter) {
+                      console.log('newcounter.get(\'time\')='+newcounter.get('time'));
+                      var content = newcounter.get('time') + ' ' + $(document.getElementById(url)).text();
+                      $(document.getElementById(url)).text(content);
+                  },
+                  error: function(newcounter, error) {
+                      console.log('Failed to create');
+                  }
+              });
+            }
+        },
+        error: function(error) {
+            console.log('Error:' + error.code + ' ' + error.message);
+        }
+      });
+    }
+    $(function() {
+        var Counter = AV.Object.extend('Counter');
+        if ($('.leancloud-views_num').length === 1) {
+            addCount(Counter);
+        } else if ($('.post-title-link').length > 1) {
+            showTime(Counter);
+        }
+    });
+</script>
+
+
+
+    </div>
+</body>
+</html>

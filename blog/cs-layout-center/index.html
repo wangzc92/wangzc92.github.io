@@ -25,7 +25,7 @@
 方式二：Flex 布局
 1234.parent&amp;#123;	display">
 <meta property="og:image" content="http://ofi3qxlvd.bkt.clouddn.com/css3.jpg">
-<meta property="og:updated_time" content="2017-03-12T11:00:35.586Z">
+<meta property="og:updated_time" content="2017-03-12T11:52:04.993Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="详解 CSS 居中布局技巧">
 <meta name="twitter:description" content="水平居中元素：
@@ -229,10 +229,7 @@
 <p>方式二：</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">position</span>:relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">0</span>;</div><div class="line">	<span class="attribute">bottom</span>:<span class="number">0</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">margin-top</span>:auto <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="垂直居中元素：-1"><a href="#垂直居中元素：-1" class="headerlink" title="垂直居中元素："></a>垂直居中元素：</h2><ul>
-<li><ol>
-<li>绝对居中定位</li>
-</ol>
-</li>
+<li>1.绝对居中定位</li>
 </ul>
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">div&#123;</div><div class="line">	width:100px;</div><div class="line">	height:100px;</div><div class="line">	margin:auto;</div><div class="line">	position: fixed;  //absolute is ok</div><div class="line">	top:0;</div><div class="line">	right:0;</div><div class="line">	bottom:0;</div><div class="line">	left:0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>优点：</p>
@@ -243,10 +240,7 @@
 <li>浏览器支持性好</li>
 </ol>
 <ul>
-<li><ol>
-<li>负边距居中</li>
-</ol>
-</li>
+<li>2.负边距居中</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">right</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">margin-left</span>:-<span class="number">50px</span>;</div><div class="line">	<span class="attribute">margin-top</span>:-<span class="number">50px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>特点：</p>
@@ -255,10 +249,7 @@
 <li>灵活性差，不能自适应，宽高不支持百分比尺寸和 min-/max- 属性</li>
 </ol>
 <ul>
-<li><ol>
-<li>Transform 定位</li>
-</ol>
-</li>
+<li>3.Transform 定位</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">right</span>:<span class="number">50%</span>;</div><div class="line">	<span class="attribute">transform</span>:<span class="built_in">translate</span>(-50%,-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>特点：</p>
@@ -267,35 +258,23 @@
 <li>可能干扰其他 transform 效果</li>
 </ol>
 <ul>
-<li><ol>
-<li>Flexbox 布局</li>
-</ol>
-</li>
+<li>4.Flexbox 布局</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">display</span>:flex;</div><div class="line">	<span class="attribute">justify-content</span>:center;</div><div class="line">	<span class="attribute">align-item</span>:center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>这是 CSS 布局未来的趋势。Flexbox 是 CSS3 新增属性，设计初衷是为了解决像垂直居中这样的常见布局问题。</p>
 <ul>
-<li><ol>
-<li>table-cell 居中</li>
-</ol>
-</li>
+<li>5.table-cell 居中</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">display</span>:table-cell;</div><div class="line">	<span class="attribute">vertical-align</span>: middle;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">	<span class="attribute">width</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">border</span>:<span class="number">1px</span> solid red;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">100px</span>;</div><div class="line">	<span class="attribute">display</span>: inline-block;</div><div class="line">	<span class="attribute">background-color</span>:<span class="number">#03f</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>适用于子元素 display 为 inline-block, inline 类型的元素，需要已知父元素的宽高，且父元素的宽高不能设为百分比数。</p>
 <ul>
-<li><ol>
-<li>font-size 配合 vertical-align 实现垂直居中</li>
-</ol>
-</li>
+<li>6.font-size 配合 vertical-align 实现垂直居中</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.parent</span>&#123;</div><div class="line">	<span class="attribute">font-size</span>:<span class="number">175.4px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.child</span>&#123;</div><div class="line">	<span class="attribute">vertical-align</span>:middle;</div><div class="line">	<span class="attribute">display</span>:inline-block;</div><div class="line">	<span class="attribute">font-size</span>:<span class="number">12px</span>;</div><div class="line">	<span class="attribute">width</span>: <span class="number">50px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">50px</span>;</div><div class="line">	<span class="attribute">background-color</span>:<span class="number">#00f</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>该方法的要点是给父元素设一个合适的 font-size 的值，这个值的取值为该父元素的高度除以 1.14 得到的值，并且子元素必须 是一个 inline 或 inline-block 元素，需要加上 <code>vertical-align: middle</code> 属性。使用这种方法，子元素的宽度或高度都不必知道。</p>
 <p>具体原理可以上网搜 vertical-align 垂直居中。</p>
 <ul>
-<li><ol>
-<li>文本内容居中</li>
-</ol>
-</li>
+<li>7.文本内容居中</li>
 </ul>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">text</span>&#123;</div><div class="line">	<span class="attribute">height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">line-height</span>:<span class="number">100px</span>;</div><div class="line">	<span class="attribute">text-align</span>:center;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
         </div>

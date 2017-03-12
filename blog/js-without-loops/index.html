@@ -6,7 +6,7 @@
     <title>无循环 JavaScript | 笑笑前端圈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="javascript" />
+        <meta name="keywords" content="JavaScript" />
     
     <meta name="description" content="之前有讨论过，缩进导致了代码复杂性的增加（以粗鲁的方式）。我们的目标是写出复杂度低的 JavaScript 代码。通过选择一种合适的抽象来解决这个问题，可是你怎么能知道选择哪一种抽象呢？很遗憾的是到目前为止，没有找到一个具体的例子能解释这一问题。这篇文章中我们讨论不用任何循环如何处理 JavaScript 数组，最终得出的效果是得到低复杂度的代码。
 
@@ -19,7 +19,7 @@
 
 循环是一种很重要的控制结构，它很难被重用，也很">
 <meta property="og:image" content="https://huzidaha.github.io/images-store/201702/6-1javascript-without-loops.png">
-<meta property="og:updated_time" content="2017-03-11T15:41:54.813Z">
+<meta property="og:updated_time" content="2017-03-12T05:50:36.391Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="无循环 JavaScript">
 <meta name="twitter:description" content="之前有讨论过，缩进导致了代码复杂性的增加（以粗鲁的方式）。我们的目标是写出复杂度低的 JavaScript 代码。通过选择一种合适的抽象来解决这个问题，可是你怎么能知道选择哪一种抽象呢？很遗憾的是到目前为止，没有找到一个具体的例子能解释这一问题。这篇文章中我们讨论不用任何循环如何处理 JavaScript 数组，最终得出的效果是得到低复杂度的代码。
@@ -61,10 +61,6 @@
                         <a href="/" class="logo"></a>
                     </h1>
                     
-                        <h2 class="subtitle-wrap">
-                            <p class="subtitle">纯净前端知识分享平台</p>
-                        </h2>
-                    
                 </div>
                 <div id="header-inner" class="nav-container">
                     <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
@@ -75,7 +71,7 @@
                                     <a class="main-nav-list-link" href="/">主页</a>
                                 </li>
                             
-                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/">前端笔记</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/CSS/">CSS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/Javascript/">Javascript</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/Service/">Service</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/面试宝典/">面试宝典</a></li></ul>
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/">前端笔记</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/CSS/">CSS</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/JavaScript/">JavaScript</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/前端笔记/Service/">Service</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/面试宝典/">面试宝典</a></li></ul>
                                     
                                 <li class="main-nav-list-item" >
                                     <a class="main-nav-list-link" href="/about/index.html">关于</a>
@@ -134,7 +130,7 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/前端笔记/Javascript/">Javascript</a>
+    <a class="page-title-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/前端笔记/JavaScript/">JavaScript</a>
     </h1>
 </div>
                         <div class="main-body-content">
@@ -155,7 +151,7 @@
             <div class="article-subtitle">
                 
 	<i class="icon fa fa-user"></i>
-    <span class="article-author">Xiaoxiao</span>
+    <span class="article-author">James Sinclair</span>
 
                 <i class="icon fa fa-clock-o"></i>
 <a href="/blog/js-without-loops/" class="article-date">
@@ -165,7 +161,7 @@
 <span id="/blog/js-without-loops/" class="leancloud-views_num" data-flag-title="无循环 JavaScript"></span>
 
                 
-    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript/">javascript</a></li></ul>
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
 
             </div>
         
@@ -458,7 +454,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
                         </div>
                         
                         <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/Javascript/">Javascript</a></p>
+                            <p class="item-category"><a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/JavaScript/">JavaScript</a></p>
                             <p class="item-title"><a href="/blog/js-without-loops/" class="title">无循环 JavaScript</a></p>
                             <p class="item-date"><time datetime="2017-03-11T14:52:00.000Z" itemprop="datePublished">2017-03-11</time></p>
                         </div>
@@ -493,7 +489,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/">前端笔记</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/CSS/">CSS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/Javascript/">Javascript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/Service/">Service</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/面试宝典/">面试宝典</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/">前端笔记</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/CSS/">CSS</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端笔记/Service/">Service</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/面试宝典/">面试宝典</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -513,7 +509,7 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     <div class="widget-wrap widget-float">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud" id="tagcloud">
-            <a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/flexbox/" style="font-size: 20px;">flexbox</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/javascript/" style="font-size: 10px;">javascript</a> <a href="/tags/前端工程师/" style="font-size: 10px;">前端工程师</a>
+            <a href="/tags/CDN/" style="font-size: 10px;">CDN</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/flexbox/" style="font-size: 20px;">flexbox</a> <a href="/tags/前端工程师/" style="font-size: 10px;">前端工程师</a>
         </div>
     </div>
 

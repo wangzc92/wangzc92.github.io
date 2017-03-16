@@ -3,15 +3,32 @@
 <head>
     <meta charset="utf-8">
     
-    <title>标签：: HTTP | 笑笑前端圈</title>
+    <title>WebAssembly 系列（一）生动形象地介绍 WebAssembly | 笑笑前端圈</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="笑笑前端圈">
-<meta property="og:url" content="http://xiaoxiaoqdq.com/tags/HTTP/index.html">
+        <meta name="keywords" content="WebAssembly" />
+    
+    <meta name="description" content="你可能已经听说过，WebAssembly 执行的更快。但是 WebAssembly 为什么执行的更快呢？
+在这个系列文章中，我会为你解释这一点。
+等等，什么是 WebAssembly？WebAssembly 是除了 JavaScript 以外，另一种可以在浏览器中执行的编程语言。所以当人们说 WebAssembly 更快的时候，一般来讲是与 JavaScript 相比而言的。
+我不会暗示大家开发时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WebAssembly 系列（一）生动形象地介绍 WebAssembly">
+<meta property="og:url" content="http://xiaoxiaoqdq.com/blog/js-WebAssembly-1/index.html">
 <meta property="og:site_name" content="笑笑前端圈">
+<meta property="og:description" content="你可能已经听说过，WebAssembly 执行的更快。但是 WebAssembly 为什么执行的更快呢？
+在这个系列文章中，我会为你解释这一点。
+等等，什么是 WebAssembly？WebAssembly 是除了 JavaScript 以外，另一种可以在浏览器中执行的编程语言。所以当人们说 WebAssembly 更快的时候，一般来讲是与 JavaScript 相比而言的。
+我不会暗示大家开发时">
+<meta property="og:image" content="https://huzidaha.github.io/images-store/201703/22-1.png">
+<meta property="og:updated_time" content="2017-03-16T10:13:29.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笑笑前端圈">
+<meta name="twitter:title" content="WebAssembly 系列（一）生动形象地介绍 WebAssembly">
+<meta name="twitter:description" content="你可能已经听说过，WebAssembly 执行的更快。但是 WebAssembly 为什么执行的更快呢？
+在这个系列文章中，我会为你解释这一点。
+等等，什么是 WebAssembly？WebAssembly 是除了 JavaScript 以外，另一种可以在浏览器中执行的编程语言。所以当人们说 WebAssembly 更快的时候，一般来讲是与 JavaScript 相比而言的。
+我不会暗示大家开发时">
+<meta name="twitter:image" content="https://huzidaha.github.io/images-store/201703/22-1.png">
     
 
     
@@ -125,73 +142,162 @@ var _hmt = _hmt || [];
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>标签：: <em>HTTP</em>
+    <a class="page-title-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/前端笔记/Javascript/">Javascript</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-js-WebAssembly-1" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/blog/se-http-cdn/" class="thumbnail">
-    
-    
-        <span style="background-image:url(https://huzidaha.github.io/images-store/201702/9-1.png)" alt="掌握 HTTP 缓存——从请求到响应过程的一切" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="ds-thread-count" data-thread-key="/blog/se-http-cdn/">0</span>
-    
-</span>
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <p class="category">
-            <a class="article-category-link" href="/categories/前端笔记/">前端笔记</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/前端笔记/Service/">Service</a>
-            </p>
-            <p class="date"><time datetime="2017-03-11T15:32:00.000Z" itemprop="datePublished">2017-03-11</time></p>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/blog/se-http-cdn/">掌握 HTTP 缓存——从请求到响应过程的一切</a>
+        WebAssembly 系列（一）生动形象地介绍 WebAssembly
         </h1>
     
 
-        <p class="article-excerpt">
-            CDN类的网站曾经一度雄踞 Alexa 域名排行的前 100。以前一些小网站不需要使用 CDN 或者根本负担不起其价格，不过这一现象近几年发生了很大的变化，CDN 市场上出现了很多按次付费，非公司性的提供商，这使得 CDN 变成人人都能负担的起的一种服务了。本文讲述的就是如何使用这种简单易用的缓存服务。
-使用内容分发网络（ CDN ）你需要先正确地认识 HTTP 响应头：和 HTTP 响应头中的哪
-        </p>
+            </header>
+        
+        
+            <div class="article-subtitle">
+                
+	<i class="icon fa fa-user"></i>
+    <span class="article-author">Lin Clark</span>
+
+                <i class="icon fa fa-clock-o"></i>
+<a href="/blog/js-WebAssembly-1/" class="article-date">
+    <time datetime="2017-03-16T10:11:00.000Z" itemprop="datePublished">2017-03-16</time>
+</a>
+                <i class="icon fa fa-eye"></i>
+<span id="/blog/js-WebAssembly-1/" class="leancloud-views_num" data-flag-title="WebAssembly 系列（一）生动形象地介绍 WebAssembly"></span>
+
+                
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/WebAssembly/">WebAssembly</a></li></ul>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>你可能已经听说过，WebAssembly 执行的更快。但是 WebAssembly 为什么执行的更快呢？</p>
+<p>在这个系列文章中，我会为你解释这一点。</p>
+<h2 id="等等，什么是-WebAssembly？"><a href="#等等，什么是-WebAssembly？" class="headerlink" title="等等，什么是 WebAssembly？"></a>等等，什么是 WebAssembly？</h2><p>WebAssembly 是除了 JavaScript 以外，另一种可以在浏览器中执行的编程语言。所以当人们说 WebAssembly 更快的时候，一般来讲是与 JavaScript 相比而言的。</p>
+<p>我不会暗示大家开发时对二者的选择——或者选择 WebAssembly，或者选择 JavaScript。实际上，我们更希望在同一个工程中，两个你同时使用。</p>
+<p>对二者的比较倒是非常有必要的，这样你就可以了解到 WebAssembly 所拥有的独特特性。</p>
+<h2 id="一些关于性能的历史"><a href="#一些关于性能的历史" class="headerlink" title="一些关于性能的历史"></a>一些关于性能的历史</h2><p>JavaScript 于 1995 年问世，它的设计初衷并不是为了执行起来快，在前 10 个年头，它的执行速度也确实不快。</p>
+<p>紧接着，浏览器市场竞争开始激烈起来。</p>
+<p>被人们广为传播的“性能大战”在 2008 年打响。许多浏览器引入了 Just-in-time 编译器，也叫 JIT。基于 JIT 的模式，JavaScript 代码的运行渐渐变快。</p>
+<p>正是由于这些 JIT 的引入，使得 JavaScript 的性能达到了一个转折点，JS 代码执行速度快了 10 倍。</p>
+<p><img src="https://huzidaha.github.io/images-store/201703/22-1.png" alt=""></p>
+<p>随着性能的提升，JavaScript 可以应用到以前根本没有想到过的领域，比如用于后端开发的 Node.js。性能的提升使得 JavaScript 的应用范围得到很大的扩展。</p>
+<p>现在通过 WebAssembly，我们很有可能正处于第二个拐点。</p>
+<p><img src="https://huzidaha.github.io/images-store/201703/22-2.png" alt=""></p>
+<p>所以，接下来，我们深入了解一下为什么 WebAssembly 更快、执行效率更高。</p>
+<p>接下来一系列的文章希望读者能够细细品味，仔细阅读，文章如下：</p>
+<h3 id="背景知识："><a href="#背景知识：" class="headerlink" title="背景知识："></a>背景知识：</h3><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/25669120?refer=qianduandaha" target="_blank" rel="external">JavaScript Just-in-time (JIT) 工作原理</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/25718411?refer=qianduandaha" target="_blank" rel="external">编译器如何生成汇编</a></li>
+</ul>
+<h3 id="当前-WebAssembly-的状况"><a href="#当前-WebAssembly-的状况" class="headerlink" title="当前 WebAssembly 的状况"></a>当前 WebAssembly 的状况</h3><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/25754084?refer=qianduandaha" target="_blank" rel="external">WebAssembly 工作原理</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/25773367?refer=qianduandaha" target="_blank" rel="external">为什么 WebAssembly 更快？</a></li>
+</ul>
+<h3 id="WebAssembly-的未来"><a href="#WebAssembly-的未来" class="headerlink" title="WebAssembly 的未来"></a>WebAssembly 的未来</h3><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/25799683" target="_blank" rel="external">WebAssembly 的现在与未来</a></li>
+</ul>
+<blockquote>
+<p>本文作者：Lin Clark<br>英文原文：<a href="https://hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/" target="_blank" rel="external">A cartoon intro to WebAssembly</a></p>
+</blockquote>
+
+        </div>
+        <footer class="article-footer">
+            
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+
+        </footer>
     </div>
 </article>
+
+    <section id="comments">
     
-        </div>
+        
+    <div class="ds-thread" data-thread-key="/blog/js-WebAssembly-1/" data-title="WebAssembly 系列（一）生动形象地介绍 WebAssembly" data-url="http://xiaoxiaoqdq.com//blog/js-WebAssembly-1/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
     
-
-
-    </div></section>
-
+    </section>
 
 
                         </div>
@@ -220,6 +326,19 @@ var _hmt = _hmt || [];
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/blog/js-WebAssembly-6/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">WebAssembly 系列（六）WebAssembly 的现在与未来</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
